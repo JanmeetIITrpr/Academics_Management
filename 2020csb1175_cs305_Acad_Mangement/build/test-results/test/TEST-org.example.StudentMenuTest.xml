@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.StudentMenuTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-03-31T15:51:11" hostname="JANMEETZEN" time="0.089">
+  <properties/>
+  <testcase name="testHandleStudentMenu10()" classname="org.example.StudentMenuTest" time="0.016"/>
+  <testcase name="testHandleStudentMenu1()" classname="org.example.StudentMenuTest" time="0.005"/>
+  <testcase name="testHandleStudentMenu2()" classname="org.example.StudentMenuTest" time="0.006"/>
+  <testcase name="testHandleStudentMenu3()" classname="org.example.StudentMenuTest" time="0.008"/>
+  <testcase name="testHandleStudentMenu4()" classname="org.example.StudentMenuTest" time="0.006"/>
+  <testcase name="testHandleStudentMenu5()" classname="org.example.StudentMenuTest" time="0.007"/>
+  <testcase name="testHandleStudentMenu6()" classname="org.example.StudentMenuTest" time="0.004"/>
+  <testcase name="testHandleStudentMenu7()" classname="org.example.StudentMenuTest" time="0.005"/>
+  <testcase name="testHandleStudentMenu8()" classname="org.example.StudentMenuTest" time="0.018"/>
+  <testcase name="testHandleStudentMenu9()" classname="org.example.StudentMenuTest" time="0.005"/>
+  <system-out><![CDATA[Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Sorry, you are not eligible for graduation.
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+id ---> 2020csb0
+name ---> janmeet
+batch_id ---> 2020csb
+email ---> 2020csb0@iitrpr.ac.in
+phone_number ---> 999999
+credits ---> 0
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Enter name to update: 
+Enter phone number to update: 
+Enter password to update: 
+Profile updated successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Enter the course ID or 0 to exit:
+No such course is offered.
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Enter course_id to delete or 0 to exit
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+You have no courses.
+
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+0.0
+press any key to continue
+As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

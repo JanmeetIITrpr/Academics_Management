@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>users.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Tests in 'Acad_Mangement.test' Coverage Results</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">users.java</span></div><h1>users.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.sql.*;
+import java.util.List;
+import java.util.Scanner;
+
+<span class="nc" id="L7">public class users {</span>
+<span class="fc" id="L8">    static final Connection connection = SQL.getConnection();</span>
+
+    public static String add(String role, List&lt;String&gt; info) throws SQLException {
+        while (true) {
+<span class="pc bpc" id="L12" title="1 of 4 branches missed.">            switch (role) {</span>
+                case &quot;0&quot;: {
+<span class="fc" id="L14">                    return &quot;wrong_input&quot;;</span>
+                }
+                case &quot;1&quot;: {
+                    String name, batchId, phoneNumber;
+<span class="fc" id="L18">                    name = info.get(0);</span>
+<span class="fc" id="L19">                    batchId = info.get(1);</span>
+<span class="fc" id="L20">                    phoneNumber = info.get(2);</span>
+
+<span class="fc" id="L22">                        PreparedStatement preparedStatement = connection.prepareStatement(</span>
+                                &quot;SELECT COUNT(*) FROM student WHERE batch_id = ?;&quot;
+                        );
+<span class="fc" id="L25">                        preparedStatement.setString(1, batchId);</span>
+
+<span class="fc" id="L27">                        ResultSet resultSet = preparedStatement.executeQuery();</span>
+
+<span class="fc" id="L29">                        int count =0;</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">                        while (resultSet.next())</span>
+<span class="fc" id="L31">                            count=resultSet.getInt(1);</span>
+<span class="fc" id="L32">                        String id = batchId + count;</span>
+
+<span class="fc" id="L34">                        preparedStatement = connection.prepareStatement(</span>
+                                &quot;INSERT INTO student (id, name, batch_id, email, password, phone_number, credits, token) &quot; +
+                                        &quot;VALUES (?, ?, ?, ?, ?, ?, 0, '');&quot;
+                        );
+<span class="fc" id="L38">                        preparedStatement.setString(1, id);</span>
+<span class="fc" id="L39">                        preparedStatement.setString(2, name);</span>
+<span class="fc" id="L40">                        preparedStatement.setString(3, batchId);</span>
+<span class="fc" id="L41">                        preparedStatement.setString(4, id + &quot;@iitrpr.ac.in&quot;);</span>
+<span class="fc" id="L42">                        preparedStatement.setString(5, &quot;iitropar&quot;);</span>
+<span class="fc" id="L43">                        preparedStatement.setString(6, phoneNumber);</span>
+
+<span class="fc" id="L45">                        preparedStatement.executeUpdate();</span>
+<span class="fc" id="L46">                        return id;</span>
+
+                    //break;
+                }
+                case &quot;2&quot;: {
+                    String name, depId, phoneNumber;
+                    //System.out.println(&quot;Enter name of the instructor&quot;);
+<span class="fc" id="L53">                    name = info.get(0);</span>
+                    //System.out.println(&quot;Enter department ID of the instructor&quot;);
+<span class="fc" id="L55">                    depId = info.get(1);</span>
+                    //System.out.println(&quot;Enter phone number of the instructor&quot;);
+<span class="fc" id="L57">                    phoneNumber = info.get(2);</span>
+<span class="fc" id="L58">                        PreparedStatement preparedStatement = connection.prepareStatement(</span>
+                                &quot;SELECT COUNT(*) FROM faculty WHERE dep_id = ?;&quot;
+                        );
+<span class="fc" id="L61">                        preparedStatement.setString(1, depId);</span>
+
+<span class="fc" id="L63">                        ResultSet resultSet = preparedStatement.executeQuery();</span>
+<span class="fc" id="L64">                        int count=0;</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">                        while(resultSet.next())</span>
+<span class="fc" id="L66">                            count = resultSet.getInt(1);</span>
+<span class="fc" id="L67">                        String id = depId + count;</span>
+
+<span class="fc" id="L69">                        preparedStatement = connection.prepareStatement(</span>
+                                &quot;INSERT INTO faculty (id, name, dep_id, email, password, phone_number, token) &quot; +
+                                        &quot;VALUES (?, ?, ?, ?, ?, ?, '');&quot;
+                        );
+<span class="fc" id="L73">                        preparedStatement.setString(1, id);</span>
+<span class="fc" id="L74">                        preparedStatement.setString(2, name);</span>
+<span class="fc" id="L75">                        preparedStatement.setString(3, depId);</span>
+<span class="fc" id="L76">                        preparedStatement.setString(4, id + &quot;@iitrpr.ac.in&quot;);</span>
+<span class="fc" id="L77">                        preparedStatement.setString(5, &quot;iitropar&quot;);</span>
+<span class="fc" id="L78">                        preparedStatement.setString(6, phoneNumber);</span>
+
+<span class="fc" id="L80">                        preparedStatement.executeUpdate();</span>
+<span class="fc" id="L81">                        return id;</span>
+                    //break;
+                }
+                default: {
+<span class="nc" id="L85">                    System.out.println(&quot;Please follow the instructions&quot;);</span>
+                }
+            }
+        }
+    }
+
+    public static boolean delete(String role, String id) {
+        while(true){
+<span class="pc bpc" id="L93" title="1 of 4 branches missed.">            switch(role){</span>
+<span class="fc" id="L94">                case(&quot;0&quot;): return true;</span>
+                case(&quot;1&quot;):
+                {
+<span class="fc" id="L97">                    String deleteStudentQuery = &quot;DELETE FROM student WHERE id = ?;&quot;;</span>
+<span class="fc" id="L98">                    try(PreparedStatement removeuser= connection.prepareStatement(deleteStudentQuery)){</span>
+<span class="fc" id="L99">                        removeuser.setString(1, id);</span>
+<span class="fc" id="L100">                        removeuser.executeUpdate();</span>
+<span class="fc" id="L101">                        System.out.println(&quot;Student successfully deleted!&quot;);</span>
+<span class="fc" id="L102">                        return true;</span>
+<span class="nc" id="L103">                    }catch(SQLException e){</span>
+<span class="nc" id="L104">                        System.out.println(&quot;Error deleting student&quot;);</span>
+<span class="nc" id="L105">                        return false;</span>
+                    }
+                }
+                case(&quot;2&quot;):
+                {
+<span class="fc" id="L110">                    String deleteFacultyQuery = &quot;DELETE FROM faculty WHERE id = ?;&quot;;</span>
+<span class="fc" id="L111">                    try(PreparedStatement removeuser= connection.prepareStatement(deleteFacultyQuery)){</span>
+<span class="fc" id="L112">                        removeuser.setString(1, id);</span>
+<span class="fc" id="L113">                        removeuser.executeUpdate();</span>
+<span class="fc" id="L114">                        System.out.println(&quot;Instructor successfully deleted!&quot;);</span>
+<span class="fc" id="L115">                        return true;</span>
+<span class="nc" id="L116">                    }catch(SQLException e){</span>
+<span class="nc" id="L117">                        System.out.println(&quot;Error deleting faculty member&quot;);</span>
+<span class="nc" id="L118">                        return false;</span>
+                    }
+                }
+                default: {
+<span class="nc" id="L122">                    System.out.println(&quot;Please follow the instructions&quot;);</span>
+                }
+
+            }
+        }
+    }
+
+    public static boolean view(Integer choice) throws SQLException {
+        //Scanner input = new Scanner(System.in);
+//        System.out.println(&quot;Enter 1 for student and 2 for instructor:&quot;);
+//        choice = input.nextInt();
+        String query;
+<span class="fc bfc" id="L134" title="All 2 branches covered.">        if (choice == 1) {</span>
+<span class="fc" id="L135">            query = &quot;SELECT id, name, batch_id, email, phone_number FROM student&quot;;</span>
+<span class="fc bfc" id="L136" title="All 2 branches covered.">        } else if (choice == 2) {</span>
+<span class="fc" id="L137">            query = &quot;SELECT id, name, email, dep_id, phone_number FROM faculty&quot;;</span>
+        } else {
+<span class="fc" id="L139">            System.out.println(&quot;Invalid choice.&quot;);</span>
+<span class="fc" id="L140">            return false;</span>
+        }
+<span class="fc" id="L142">            Statement statement = connection.createStatement();</span>
+<span class="fc" id="L143">            ResultSet result = statement.executeQuery(query);</span>
+<span class="fc" id="L144">            ResultSetMetaData metaData = result.getMetaData();</span>
+<span class="fc" id="L145">            int numColumns = metaData.getColumnCount();</span>
+<span class="fc" id="L146">            StringBuilder responseBuilder = new StringBuilder();</span>
+<span class="fc bfc" id="L147" title="All 2 branches covered.">            while (result.next()) {</span>
+<span class="fc bfc" id="L148" title="All 2 branches covered.">                for (int i = 1; i &lt;= numColumns; i++) {</span>
+<span class="fc" id="L149">                    String columnValue = result.getString(i);</span>
+<span class="fc" id="L150">                    String columnName = metaData.getColumnName(i);</span>
+<span class="fc" id="L151">                    responseBuilder.append(columnName).append(&quot; ---&gt; &quot;).append(columnValue).append(&quot;   &quot;);</span>
+                }
+<span class="fc" id="L153">                responseBuilder.append(&quot;\n&quot;);</span>
+            }
+<span class="fc" id="L155">            System.out.println(responseBuilder.toString());</span>
+<span class="fc" id="L156">            statement.close();</span>
+<span class="fc" id="L157">            result.close();</span>
+//            System.out.println(&quot;Press any key to continue.&quot;);
+//            input.nextLine();
+//            input.nextLine();
+<span class="fc" id="L161">            return true;</span>
+    }
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

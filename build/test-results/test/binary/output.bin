@@ -1,0 +1,1735 @@
+)Connected to PSQL database successfully
+;Welcome to the IIT Ropar's academics management portal :)
+Please enter your user role
+0. to exit 
+1. Student
+2. Faculty
+3. Academic Section
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+-Sorry, you are not eligible for graduation.
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Logged out successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+id ---> 2020csb0
+name ---> janmeet
+batch_id ---> 2020csb
+!email ---> 2020csb0@iitrpr.ac.in
+phone_number ---> 999999
+credits ---> 0
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Enter name to update: 
+ Enter phone number to update: 
+Enter password to update: 
+Profile updated successfully!
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+Ocourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+Ocourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+Ocourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+Ocourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+Ocourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+
+	Enter your email:
+	Enter your password:
+	Logged in successfully!
+	4As a student, you have the following options,Enter
+	0. to logout
+	1. to view profile
+	2. to update profile
+	 3. to view the offered courses
+	4. to add course
+	5. to delete Course
+	6. to view your courses
+	7. to view grades
+	8. to view your cgpa
+	9. to check graduation
+	#Enter the course ID or 0 to exit:
+	No such course is offered.
+
+Enter your email:
+
+Enter your password:
+
+Logged in successfully!
+
+4As a student, you have the following options,Enter
+
+0. to logout
+
+1. to view profile
+
+2. to update profile
+
+ 3. to view the offered courses
+
+4. to add course
+
+5. to delete Course
+
+6. to view your courses
+
+7. to view grades
+
+8. to view your cgpa
+
+9. to check graduation
+
+(Enter course_id to delete or 0 to exit
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+ICourse ID: DM100 Instructor ID: CS0 Status: pending instructor approval 
+
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+
+¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+
+·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+
+
+Enter your email:
+Enter your password:
+Logged in successfully!
+4As a student, you have the following options,Enter
+0. to logout
+1. to view profile
+2. to update profile
+ 3. to view the offered courses
+4. to add course
+5. to delete Course
+6. to view your courses
+7. to view grades
+8. to view your cgpa
+9. to check graduation
+0.0
+press any key to continue
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+ŽEnter batch id: Enter year: Enter department id: Error while adding batch: ERROR: duplicate key value violates unique constraint "batch_pkey"
+.  Detail: Key (id)=(2021eeb) already exists.
+"Press 0 to exit or 1 to continue: BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+•Enter course id: Enter course name: Enter department id: Enter number of lectures per week: Enter number of tutorials per week: Enter number of course practicals per week: Enter course credits: Enter the course code of a prerequisite course or 0 to exit: Enter the course code of a prerequisite course or 0 to exit: Error adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
+,  Detail: Key (id)=(SE420) already exists.
+"Press 0 to exit or 1 to continue: BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+3Enter course id or 0 to exit: enter the batch_id 
+enter the course type
+Enter course id or 0 to exit: BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter the academic year:
+&Enter the semester (monsoon/winter):
+ A semester is already running.
+#2021-winter started successfully.
+>Please add courses to the current semester's course catalog.
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+!2021-winter ended successfully.
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+'Enter course code or enter 0 to exit.
+Semester is not yet started.
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+{student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Press:
+
+0 to exit
+1 to add student
+2 to add instructor
+Enter name of the student
+Enter batch ID of the student
+#Enter phone number of the student
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Press:
+
+0 to exit
+1 to add student
+2 to add instructor
+Enter name of the instructor
+'Enter department ID of the instructor
+&Enter phone number of the instructor
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+!Keep the transcript file ready.
+Enter the student ID.
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter the student id:
+&No transcript found for the student.
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Vcourse_id ---> CS301 name ---> DB dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+\course_id ---> SE420 name ---> Sex Ed dep_id ---> CS l ---> 3 t ---> 69 p ---> 69 c ---> 3 
+`course_id ---> DM101 name ---> dummy_course dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+[course_id ---> DM100 name ---> dummboy dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+ccourse_id ---> CS200 name ---> Computer Dhokla dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Vcourse_id ---> CS301 name ---> DB dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+\course_id ---> SE420 name ---> Sex Ed dep_id ---> CS l ---> 3 t ---> 69 p ---> 69 c ---> 3 
+`course_id ---> DM101 name ---> dummy_course dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+[course_id ---> DM100 name ---> dummboy dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+ccourse_id ---> CS200 name ---> Computer Dhokla dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+
+BEnter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+!6. Add course to course catalog
+ 7. View grades of all students
+8. Add users
+!9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+ please follow the instructions
+ wrong credentials
+ logged in successfully
+ $2026-monsoon started successfully.
+ >Please add courses to the current semester's course catalog.
+zid ---> 2021eeb0   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb0@iitrpr.ac.in   phone_number ---> 1234   
+€id ---> 2020csb1   name ---> dummy   batch_id ---> 2020csb   email ---> 2020csb1@iitrpr.ac.in   phone_number ---> 9327223367   
+zid ---> 2021eeb1   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb1@iitrpr.ac.in   phone_number ---> 1234   
+€id ---> 2020csb2   name ---> dummy   batch_id ---> 2020csb   email ---> 2020csb2@iitrpr.ac.in   phone_number ---> 9327223367   
+zid ---> 2021eeb2   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb2@iitrpr.ac.in   phone_number ---> 1234   
+€id ---> 2020csb3   name ---> dummy   batch_id ---> 2020csb   email ---> 2020csb3@iitrpr.ac.in   phone_number ---> 9327223367   
+zid ---> 2021eeb3   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb3@iitrpr.ac.in   phone_number ---> 1234   
+€id ---> 2020csb4   name ---> dummy   batch_id ---> 2020csb   email ---> 2020csb4@iitrpr.ac.in   phone_number ---> 9327223367   
+zid ---> 2021eeb4   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb4@iitrpr.ac.in   phone_number ---> 1234   
+€id ---> 2020csb5   name ---> dummy   batch_id ---> 2020csb   email ---> 2020csb5@iitrpr.ac.in   phone_number ---> 9327223367   
+zid ---> 2021eeb5   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb5@iitrpr.ac.in   phone_number ---> 1234   
+€id ---> 2020csb6   name ---> dummy   batch_id ---> 2020csb   email ---> 2020csb6@iitrpr.ac.in   phone_number ---> 9327223367   
+id ---> 2020csb0   name ---> jan singh   batch_id ---> 2020csb   email ---> 2020csb0@iitrpr.ac.in   phone_number ---> 73011   
+zid ---> 2021eeb6   name ---> sakht   batch_id ---> 2021eeb   email ---> 2021eeb6@iitrpr.ac.in   phone_number ---> 1234   
+
+jid ---> EE2   name ---> Softie   email ---> EE2@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+oid ---> CS5   name ---> dummy   email ---> CS5@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+jid ---> EE4   name ---> Softie   email ---> EE4@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+oid ---> CS9   name ---> dummy   email ---> CS9@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+pid ---> CS6   name ---> dummy1   email ---> CS6@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+rid ---> CS10   name ---> dummy1   email ---> CS10@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+jid ---> EE0   name ---> Softie   email ---> EE0@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+oid ---> CS1   name ---> dummy   email ---> CS1@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+pid ---> CS2   name ---> dummy1   email ---> CS2@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+jid ---> EE3   name ---> Softie   email ---> EE3@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+oid ---> CS7   name ---> dummy   email ---> CS7@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+pid ---> CS8   name ---> dummy1   email ---> CS8@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+jid ---> EE1   name ---> Softie   email ---> EE1@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+oid ---> CS3   name ---> dummy   email ---> CS3@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+jid ---> EE5   name ---> Softie   email ---> EE5@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+pid ---> CS4   name ---> dummy1   email ---> CS4@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+qid ---> CS11   name ---> dummy   email ---> CS11@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+rid ---> CS12   name ---> dummy1   email ---> CS12@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 9327223367   
+lid ---> CS0   name ---> B.Sodhi   email ---> CS0@iitrpr.ac.in   dep_id ---> CS   phone_number ---> 99999   
+jid ---> EE6   name ---> Softie   email ---> EE6@iitrpr.ac.in   dep_id ---> EE   phone_number ---> 9634   
+
+Invalid choice.
+Batch added successfully
+Batch deleted successfully
+ Batch added successfully
+ Batch deleted successfully
+!Student successfully deleted!
+"logged out successfully
+#&No transcript found for the student.
+$Vcourse_id ---> CS301 name ---> DB dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+$\course_id ---> SE420 name ---> Sex Ed dep_id ---> CS l ---> 3 t ---> 69 p ---> 69 c ---> 3 
+$`course_id ---> DM101 name ---> dummy_course dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+$[course_id ---> DM100 name ---> dummboy dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+$ccourse_id ---> CS200 name ---> Computer Dhokla dep_id ---> CS l ---> 3 t ---> 3 p ---> 3 c ---> 3 
+$
+%‹Error adding course: ERROR: insert or update on table "prerequisites" violates foreign key constraint "prerequisites_prerequisite_id_fkey"
+%K  Detail: Key (prerequisite_id)=(BM101) is not present in table "course".
+%Course added successfully.
+%Course deleted successfully.
+&wrong credentials
+&logged in successfully
+'Student successfully deleted!
+'"Instructor successfully deleted!
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+({student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+(zstudent_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+(
+)YError adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
+),  Detail: Key (id)=(DM100) already exists.
+)YError adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
+),  Detail: Key (id)=(CS301) already exists.
+)YError adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
+),  Detail: Key (id)=(DM101) already exists.
++YError adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
++,  Detail: Key (id)=(DM100) already exists.
++™Error deleting course: ERROR: update or delete on table "course" violates foreign key constraint "prerequisites_course_id_fkey" on table "prerequisites"
++L  Detail: Key (id)=(DM100) is still referenced from table "prerequisites".
+, A semester is already running.
+,$2026-monsoon started successfully.
+,>Please add courses to the current semester's course catalog.
+-Batch added successfully
+-YError adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
+-,  Detail: Key (id)=(CS200) already exists.
+-Batch deleted successfully
+ "2026-monsoon ended successfully.
+ $2020-monsoon started successfully.
+ >Please add courses to the current semester's course catalog.
+ logged out successfully
+ ‹Error adding course: ERROR: insert or update on table "prerequisites" violates foreign key constraint "prerequisites_prerequisite_id_fkey"
+ K  Detail: Key (prerequisite_id)=(BM101) is not present in table "course".
+ Course added successfully.
+ Course deleted successfully.
+. ,Wrong email or password. Please try again.
+. Logged in successfully!
+. ,Wrong email or password. Please try again.
+./Profile updated successfully.
+.0No enrollment requests yet.
+.2)Course not found in the course catalog.
+.2Course added successfully.
+.2Course added successfully.
+.2Course added successfully.
+.2Course added successfully.
+.23This course is already offered by instructor CS0.
+.2Course added successfully.
+.23This course is already offered by instructor CS0.
+.2Course added successfully.
+.23This course is already offered by instructor CS0.
+.2)Course not found in the course catalog.
+.3
+.4%SELECT * FROM faculty WHERE id = ?;
+.4id ---> CS0
+.4      name ---> notdummy1
+.4"      email ---> CS0@iitrpr.ac.in
+.4      dep_id ---> CS
+.4"      phone_number ---> 12534567
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+.5 student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+.5Ÿstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+.5
+.6#Course ID: DM100, CGPA Limit: 0.00
+.6#Course ID: DM101, CGPA Limit: 0.00
+.6#Course ID: CS301, CGPA Limit: 0.00
+.6
+.7Grades submitted successfully
+.8Course ID: CS301
+.8Course ID: DM100
+.8Course ID: DM101
+.8
+. Course removed successfully.
+. 'You have not offered this course yet.
+:9Enter your email:
+:9Enter your password:
+:9Logged in successfully!
+:9Press
+:90. to logout
+:91. to view profile
+:92. to update profile
+:93. to view the course catalog
+:94. to add course
+:95. to delete Course
+:96. to view your courses
+:9#7. to view grades of all students
+:9)8. to approve or disapprove enrollments
+:99. to submit grades
+:;Enter your email:
+:;Enter your password:
+:;Logged in successfully!
+:;Press
+:;0. to logout
+:;1. to view profile
+:;2. to update profile
+:;3. to view the course catalog
+:;4. to add course
+:;5. to delete Course
+:;6. to view your courses
+:;#7. to view grades of all students
+:;)8. to approve or disapprove enrollments
+:;9. to submit grades
+:;%SELECT * FROM faculty WHERE id = ?;
+:;id ---> CS0
+:;      name ---> notdummy1
+:;"      email ---> CS0@iitrpr.ac.in
+:;      dep_id ---> CS
+:;"      phone_number ---> 12534567
+:;Press
+:;0. to logout
+:;1. to view profile
+:;2. to update profile
+:;3. to view the course catalog
+:;4. to add course
+:;5. to delete Course
+:;6. to view your courses
+:;#7. to view grades of all students
+:;)8. to approve or disapprove enrollments
+:;9. to submit grades
+:<Enter your email:
+:<Enter your password:
+:<Logged in successfully!
+:<Press
+:<0. to logout
+:<1. to view profile
+:<2. to update profile
+:<3. to view the course catalog
+:<4. to add course
+:<5. to delete Course
+:<6. to view your courses
+:<#7. to view grades of all students
+:<)8. to approve or disapprove enrollments
+:<9. to submit grades
+:<Enter name to update: 
+:< Enter phone number to update: 
+:<Enter password to update: 
+:<Profile updated successfully.
+:<Press
+:<0. to logout
+:<1. to view profile
+:<2. to update profile
+:<3. to view the course catalog
+:<4. to add course
+:<5. to delete Course
+:<6. to view your courses
+:<#7. to view grades of all students
+:<)8. to approve or disapprove enrollments
+:<9. to submit grades
+:=Enter your email:
+:=Enter your password:
+:=Logged in successfully!
+:=Press
+:=0. to logout
+:=1. to view profile
+:=2. to update profile
+:=3. to view the course catalog
+:=4. to add course
+:=5. to delete Course
+:=6. to view your courses
+:=#7. to view grades of all students
+:=)8. to approve or disapprove enrollments
+:=9. to submit grades
+:=Course ID: CS301
+:=Course ID: DM100
+:=Course ID: DM101
+:=
+:=Press
+:=0. to logout
+:=1. to view profile
+:=2. to update profile
+:=3. to view the course catalog
+:=4. to add course
+:=5. to delete Course
+:=6. to view your courses
+:=#7. to view grades of all students
+:=)8. to approve or disapprove enrollments
+:=9. to submit grades
+:= please follow the instructions
+:=Press
+:=0. to logout
+:=1. to view profile
+:=2. to update profile
+:=3. to view the course catalog
+:=4. to add course
+:=5. to delete Course
+:=6. to view your courses
+:=#7. to view grades of all students
+:=)8. to approve or disapprove enrollments
+:=9. to submit grades
+:>Enter your email:
+:>Enter your password:
+:>Logged in successfully!
+:>Press
+:>0. to logout
+:>1. to view profile
+:>2. to update profile
+:>3. to view the course catalog
+:>4. to add course
+:>5. to delete Course
+:>6. to view your courses
+:>#7. to view grades of all students
+:>)8. to approve or disapprove enrollments
+:>9. to submit grades
+:>#Enter the course ID or 0 to exit:
+:>%Set the CGPA limit for this course:
+:>3This course is already offered by instructor CS0.
+:>Press
+:>0. to logout
+:>1. to view profile
+:>2. to update profile
+:>3. to view the course catalog
+:>4. to add course
+:>5. to delete Course
+:>6. to view your courses
+:>#7. to view grades of all students
+:>)8. to approve or disapprove enrollments
+:>9. to submit grades
+:> please follow the instructions
+:>Press
+:>0. to logout
+:>1. to view profile
+:>2. to update profile
+:>3. to view the course catalog
+:>4. to add course
+:>5. to delete Course
+:>6. to view your courses
+:>#7. to view grades of all students
+:>)8. to approve or disapprove enrollments
+:>9. to submit grades
+:?Enter your email:
+:?Enter your password:
+:?Logged in successfully!
+:?Press
+:?0. to logout
+:?1. to view profile
+:?2. to update profile
+:?3. to view the course catalog
+:?4. to add course
+:?5. to delete Course
+:?6. to view your courses
+:?#7. to view grades of all students
+:?)8. to approve or disapprove enrollments
+:?9. to submit grades
+:?-Enter the course ID to remove or 0 to exit:
+:?Course removed successfully.
+:?Press
+:?0. to logout
+:?1. to view profile
+:?2. to update profile
+:?3. to view the course catalog
+:?4. to add course
+:?5. to delete Course
+:?6. to view your courses
+:?#7. to view grades of all students
+:?)8. to approve or disapprove enrollments
+:?9. to submit grades
+:@Enter your email:
+:@Enter your password:
+:@Logged in successfully!
+:@Press
+:@0. to logout
+:@1. to view profile
+:@2. to update profile
+:@3. to view the course catalog
+:@4. to add course
+:@5. to delete Course
+:@6. to view your courses
+:@#7. to view grades of all students
+:@)8. to approve or disapprove enrollments
+:@9. to submit grades
+:@#Course ID: DM100, CGPA Limit: 0.00
+:@
+:@Press
+:@0. to logout
+:@1. to view profile
+:@2. to update profile
+:@3. to view the course catalog
+:@4. to add course
+:@5. to delete Course
+:@6. to view your courses
+:@#7. to view grades of all students
+:@)8. to approve or disapprove enrollments
+:@9. to submit grades
+:AEnter your email:
+:AEnter your password:
+:ALogged in successfully!
+:APress
+:A0. to logout
+:A1. to view profile
+:A2. to update profile
+:A3. to view the course catalog
+:A4. to add course
+:A5. to delete Course
+:A6. to view your courses
+:A#7. to view grades of all students
+:A)8. to approve or disapprove enrollments
+:A9. to submit grades
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> A       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> B-       semester ---> monsoon       academic_year ---> 2020 
+:A student_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> C-       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> DM100       grade ---> B       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> C       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> E       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> F       semester ---> monsoon       academic_year ---> 2020 
+:AŸstudent_id ---> 2020csb0       instructor_id ---> CS0       course_id ---> CS301       grade ---> D       semester ---> monsoon       academic_year ---> 2020 
+:A
+:APress
+:A0. to logout
+:A1. to view profile
+:A2. to update profile
+:A3. to view the course catalog
+:A4. to add course
+:A5. to delete Course
+:A6. to view your courses
+:A#7. to view grades of all students
+:A)8. to approve or disapprove enrollments
+:A9. to submit grades
+:BEnter your email:
+:BEnter your password:
+:BLogged in successfully!
+:BPress
+:B0. to logout
+:B1. to view profile
+:B2. to update profile
+:B3. to view the course catalog
+:B4. to add course
+:B5. to delete Course
+:B6. to view your courses
+:B#7. to view grades of all students
+:B)8. to approve or disapprove enrollments
+:B9. to submit grades
+:BNo enrollment requests yet.
+:B
+:BPress any key to continue
+:B!Approve or disapprove requests.
+:BEnter course_id or 0 to exit.
+:BEnter student_id.
+:B$Press 1 to approve or 2 to reject.
+:B$Press 1 to approve or 2 to reject.
+:BEnter course_id or 0 to exit.
+:CEnter your email:
+:CEnter your password:
+:CLogged in successfully!
+:CPress
+:C0. to logout
+:C1. to view profile
+:C2. to update profile
+:C3. to view the course catalog
+:C4. to add course
+:C5. to delete Course
+:C6. to view your courses
+:C#7. to view grades of all students
+:C)8. to approve or disapprove enrollments
+:C9. to submit grades
+:CGrades submitted successfully
+:CPress
+:C0. to logout
+:C1. to view profile
+:C2. to update profile
+:C3. to view the course catalog
+:C4. to add course
+:C5. to delete Course
+:C6. to view your courses
+:C#7. to view grades of all students
+:C)8. to approve or disapprove enrollments
+:C9. to submit grades
+:DEnter your email:
+:DEnter your password:
+:DLogged in successfully!
+:DPress
+:D0. to logout
+:D1. to view profile
+:D2. to update profile
+:D3. to view the course catalog
+:D4. to add course
+:D5. to delete Course
+:D6. to view your courses
+:D#7. to view grades of all students
+:D)8. to approve or disapprove enrollments
+:D9. to submit grades
+:D please follow the instructions
+:DPress
+:D0. to logout
+:D1. to view profile
+:D2. to update profile
+:D3. to view the course catalog
+:D4. to add course
+:D5. to delete Course
+:D6. to view your courses
+:D#7. to view grades of all students
+:D)8. to approve or disapprove enrollments
+:D9. to submit grades
+E Wrong credentials.
+E Wrong credentials.
+E Logged in successfully!
+EFProfile updated successfully!
+EG-Sorry, you are not eligible for graduation.
+EH/You have not registered for course CS301 yet.
+EILogged out successfully!
+EJNo such course is offered.
+EJCYou must complete the course DM100 first to register this course.
+EJCourse added successfully.
+EJNo such course is offered.
+EKid ---> 2020csb0
+EKname ---> janmeet
+EKbatch_id ---> 2020csb
+EK!email ---> 2020csb0@iitrpr.ac.in
+EKphone_number ---> 999999
+EKcredits ---> 0
+EMWrong credentials.
+EMWrong credentials.
+EMLogged in successfully!
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> A          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> B-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN¸student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> C-          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> DM100          grade ---> B          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> C          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> E          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> F          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN·student_id ---> 2020csb0          instructor_id ---> CS0          course_id ---> CS301          grade ---> D          semester ---> monsoon          academic_year ---> 2020          
+EN
+EN
+EOOcourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+EOOcourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+EOOcourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+EOOcourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+EOOcourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+EOOcourse_id ---> DM100 cgpa_limit 0.0 course_type ---> PE instructor_id ---> CS0
+EO
+EPICourse ID: DM100 Instructor ID: CS0 Status: pending instructor approval 
+EP
+E /You have not registered for course CS301 yet.
+E Logged out successfully!

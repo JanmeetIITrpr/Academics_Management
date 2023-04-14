@@ -1,0 +1,209 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > transcript</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: transcript (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">transcript</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    92.9%
+  </span>
+  <span class="absValue">
+    (26/28)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    88.5%
+  </span>
+  <span class="absValue">
+    (46/52)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.io.*;
+&nbsp;import java.sql.*;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class transcript {</b>
+<b class="fc">&nbsp;    static final Connection connection = SQL.getConnection();</b>
+&nbsp;    public static boolean submit(String studentId) throws FileNotFoundException, SQLException {
+<b class="fc">&nbsp;        String runquery=&quot;select c.id,c.name,c.c,g.instructor_id,g.grade,g.semester,g.academic_year from GRADES g JOIN &quot;+ &quot;course c ON g.course_id=c.id WHERE g.student_id=?&quot;;</b>
+<b class="fc">&nbsp;        StringBuilder transcript=new StringBuilder();</b>
+<b class="fc">&nbsp;        PreparedStatement ts=connection.prepareStatement(runquery);</b>
+<b class="fc">&nbsp;        ts.setString(1,studentId);</b>
+<b class="fc">&nbsp;        ResultSet rs =ts.executeQuery();</b>
+<b class="fc">&nbsp;        ResultSetMetaData rsmd=rs.getMetaData();</b>
+<b class="fc">&nbsp;        int ci= rsmd.getColumnCount();</b>
+<b class="fc">&nbsp;        while(rs.next())</b>
+&nbsp;        {
+<b class="fc">&nbsp;            for(int i=1;i&lt;ci+1;i++)</b>
+&nbsp;            {
+<b class="pc">&nbsp;                switch(i)</b>
+&nbsp;                {
+&nbsp;                    case 1:
+<b class="fc">&nbsp;                        transcript.append(&quot;Course ID: &quot;);</b>
+<b class="fc">&nbsp;                        break;</b>
+&nbsp;                    case 2:
+<b class="fc">&nbsp;                        transcript.append(&quot;Course Name: &quot;);</b>
+<b class="fc">&nbsp;                        break;</b>
+&nbsp;                    case 3:
+<b class="fc">&nbsp;                        transcript.append(&quot;Credits: &quot;);</b>
+<b class="fc">&nbsp;                        break;</b>
+&nbsp;                    case 4:
+<b class="fc">&nbsp;                        transcript.append(&quot;Faculty ID: &quot;);</b>
+<b class="fc">&nbsp;                        break;</b>
+&nbsp;                    case 5:
+<b class="fc">&nbsp;                        transcript.append(&quot;Grade: &quot;);</b>
+<b class="fc">&nbsp;                        break;</b>
+&nbsp;                    case 6:
+<b class="fc">&nbsp;                        transcript.append(&quot;AY: &quot;);</b>
+<b class="fc">&nbsp;                        break;</b>
+&nbsp;                    case 7:
+<b class="fc">&nbsp;                        transcript.append(&quot;Semester: &quot;);</b>
+&nbsp;                        break;
+&nbsp;                }
+<b class="fc">&nbsp;                String cv=rs.getString(i);</b>
+<b class="fc">&nbsp;                transcript.append(cv).append(&quot;\n&quot;);</b>
+&nbsp;            }
+<b class="fc">&nbsp;            transcript.append(&quot;\n&quot;);</b>
+&nbsp;        }
+&nbsp;
+<b class="fc">&nbsp;        try(BufferedWriter output= new BufferedWriter(new FileWriter(&quot;src/main/resources/transcript-&quot;+studentId+&quot;.txt&quot;))){</b>
+<b class="fc">&nbsp;            output.write(transcript.toString());</b>
+<b class="fc">&nbsp;        } catch (IOException e) {</b>
+<b class="nc">&nbsp;            System.out.println(&quot;Could not generate Transcript&quot;);</b>
+<b class="nc">&nbsp;            throw new RuntimeException(e);</b>
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;        return true;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;        public static boolean view (String studentId){
+&nbsp;            try {
+<b class="fc">&nbsp;                PreparedStatement ps = connection.prepareStatement(&quot;SELECT transcript FROM transcript WHERE student_id = ?&quot;);</b>
+<b class="fc">&nbsp;                ps.setString(1, studentId);</b>
+&nbsp;
+<b class="fc">&nbsp;                ResultSet rs = ps.executeQuery();</b>
+&nbsp;
+<b class="fc">&nbsp;                if (rs.next()) {</b>
+<b class="fc">&nbsp;                    byte[] transcriptBytes = rs.getBytes(&quot;transcript&quot;);</b>
+<b class="fc">&nbsp;                    String transcript = new String(transcriptBytes);</b>
+&nbsp;
+<b class="fc">&nbsp;                    System.out.println(transcript);</b>
+<b class="fc">&nbsp;                    rs.close();</b>
+<b class="fc">&nbsp;                    ps.close();</b>
+&nbsp;
+&nbsp;//                    System.out.println(&quot;Press any key to continue.&quot;);
+&nbsp;//                    input.nextLine();
+<b class="fc">&nbsp;                    return true;</b>
+&nbsp;                } else {
+<b class="fc">&nbsp;                    System.out.println(&quot;No transcript found for the student.&quot;);</b>
+<b class="fc">&nbsp;                    rs.close();</b>
+<b class="fc">&nbsp;                    ps.close();</b>
+&nbsp;
+&nbsp;//                    System.out.println(&quot;Press any key to continue.&quot;);
+&nbsp;//                    input.nextLine();
+<b class="fc">&nbsp;                    return true;</b>
+&nbsp;                }
+<b class="nc">&nbsp;            } catch (SQLException e) {</b>
+<b class="nc">&nbsp;                System.out.println(&quot;Error viewing transcript: &quot; + e.getMessage());</b>
+<b class="nc">&nbsp;                return false;</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-07 22:59</div>
+</div>
+</body>
+</html>

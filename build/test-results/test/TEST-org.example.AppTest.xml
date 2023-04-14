@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-31T16:23:51" hostname="JANMEETZEN" time="0.702">
+  <properties/>
+  <testcase name="MainTest1()" classname="org.example.AppTest" time="0.702"/>
+  <system-out><![CDATA[Connected to PSQL database successfully
+Welcome to the IIT Ropar's academics management portal :)
+Please enter your user role
+0. to exit 
+1. Student
+2. Faculty
+3. Academic Section
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

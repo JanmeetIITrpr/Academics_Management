@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SQL.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Tests in 'Acad_Mangement.test' Coverage Results</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">SQL.java</span></div><h1>SQL.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.sql.*;
+<span class="nc" id="L4">public class SQL</span>
+{
+<span class="fc" id="L6">    static Connection con = null;</span>
+<span class="fc" id="L7">    static String connectionUrl = &quot;jdbc:postgresql://localhost:5432/aims&quot;;</span>
+<span class="fc" id="L8">    static String connectionUser = &quot;postgres&quot;;</span>
+<span class="fc" id="L9">    static String connectionPassword = &quot;12345678&quot;;</span>
+
+    public static Connection getConnection () {
+
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if (con != null) {</span>
+<span class="fc" id="L14">            return con;</span>
+        }
+        try{
+<span class="fc" id="L17">            Class.forName(&quot;org.postgresql.Driver&quot;);</span>
+<span class="fc" id="L18">            con = DriverManager.getConnection(connectionUrl, connectionUser, connectionPassword);</span>
+<span class="fc" id="L19">            System.out.println(&quot;Connected to PSQL database successfully&quot;);</span>
+        }
+<span class="nc" id="L21">        catch(Exception e){</span>
+<span class="nc" id="L22">            return null;//not connected</span>
+<span class="fc" id="L23">        }</span>
+
+<span class="fc" id="L25">        return con;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

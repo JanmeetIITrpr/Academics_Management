@@ -1,0 +1,195 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > App</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: App (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">App</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    66.7%
+  </span>
+  <span class="absValue">
+    (2/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    65.2%
+  </span>
+  <span class="absValue">
+    (15/23)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.sql.*;
+&nbsp;import java.util.Scanner;
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;public class App {</b>
+&nbsp;
+<b class="fc">&nbsp;      static Connection CONNECTION = SQL.getConnection();</b>
+<b class="fc">&nbsp;      public static Scanner input = new Scanner(System.in);</b>
+&nbsp;
+&nbsp;    public static void main(String[] args) throws Exception {
+<b class="fc">&nbsp;        int f=1;</b>
+<b class="fc">&nbsp;        while (f==1) {</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Welcome to the IIT Ropar&#39;s academics management portal :)&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Please enter your user role&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;0. to exit &quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;1. Student&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;2. Faculty&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;3. Academic Section&quot;);</b>
+<b class="fc">&nbsp;            String role = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;            switch (role) {</b>
+<b class="fc">&nbsp;                case &quot;0&quot;:f=0;</b>
+<b class="fc">&nbsp;                break;</b>
+&nbsp;                case &quot;1&quot;:
+<b class="nc">&nbsp;                    studentmenu.handleStudentMenu();</b>
+<b class="nc">&nbsp;                    break;</b>
+&nbsp;                case &quot;2&quot;:
+<b class="nc">&nbsp;                    facultymenu.handleFacultyMenu();</b>
+<b class="nc">&nbsp;                    break;</b>
+&nbsp;                case &quot;3&quot;:
+<b class="nc">&nbsp;                    acadmenu.handleAdminMenu();</b>
+&nbsp;                    //System.out.println(&quot;fff&quot;);
+<b class="nc">&nbsp;                    break;</b>
+&nbsp;                default:
+<b class="nc">&nbsp;                    System.out.println(&quot;Invalid role entered. Please try again.&quot;);</b>
+&nbsp;                    break;
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    //testing stay logged in feature
+&nbsp;//    public static String getLoggedInUserRole() {
+&nbsp;//        String role;
+&nbsp;//        while (true){
+&nbsp;//            int fs=0,fi=0;
+&nbsp;//            role = &quot;&quot;;
+&nbsp;//            try (Statement stmt = CONNECTION.createStatement()) {
+&nbsp;//                String query = &quot;SELECT * FROM student WHERE token = &#39;logged in&#39;;&quot;;
+&nbsp;//                ResultSet rs = stmt.executeQuery(query);
+&nbsp;//                while (rs.next()) {
+&nbsp;//                    pupil.user = true;
+&nbsp;//                    pupil.userId = rs.getString(1);
+&nbsp;//                    pupil.batch_id = rs.getString(3);
+&nbsp;//                    pupil.credits = rs.getInt(7);
+&nbsp;//                    role = &quot;1&quot;;
+&nbsp;//                    fs++;
+&nbsp;//                }
+&nbsp;//                if(fs==0) {
+&nbsp;//                    query = &quot;SELECT * FROM faculty WHERE token = &#39;logged in&#39;;&quot;;
+&nbsp;//                    rs = stmt.executeQuery(query);
+&nbsp;//                    while (rs.next()) {
+&nbsp;//                        faculty.user = true;
+&nbsp;//                        faculty.user_id = rs.getString(1);
+&nbsp;//                        role = &quot;2&quot;;
+&nbsp;//                        fi++;
+&nbsp;//                    }
+&nbsp;//                }
+&nbsp;//
+&nbsp;//                if(fs==0 &amp;&amp; fi==0){
+&nbsp;//                    System.out.println(&quot;Enter your role&quot;);
+&nbsp;//                    System.out.println(&quot;0. to exit &quot;);
+&nbsp;//                    System.out.println(&quot;1. student&quot;);
+&nbsp;//                    System.out.println(&quot;2. faculty&quot;);
+&nbsp;//                    System.out.println(&quot;3. admin&quot;);
+&nbsp;//
+&nbsp;//                    role=input.nextLine();
+&nbsp;//                    if(role.equals(&quot;0&quot;)) break ;
+&nbsp;//                }
+&nbsp;//            } catch (SQLException e) {
+&nbsp;//                throw new RuntimeException(e);
+&nbsp;//            }
+&nbsp;//            return role;
+&nbsp;//        }
+&nbsp;//        return role;
+&nbsp;//    }
+&nbsp;
+&nbsp;}
+&nbsp;
+&nbsp;
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-30 19:48</div>
+</div>
+</body>
+</html>

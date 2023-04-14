@@ -1,0 +1,325 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > acadmenu</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: acadmenu (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">acadmenu</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.1%
+  </span>
+  <span class="absValue">
+    (46/56)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    92.4%
+  </span>
+  <span class="absValue">
+    (121/131)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.io.IOException;
+&nbsp;import java.sql.SQLException;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.List;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class acadmenu {</b>
+&nbsp;    public static boolean handleAdminMenu() throws IOException, SQLException {
+&nbsp;        // Create a new instance of admin
+<b class="fc">&nbsp;        acadsection acadsection = new acadsection();</b>
+<b class="fc">&nbsp;        Scanner input = new Scanner(System.in);</b>
+&nbsp;
+&nbsp;        // Prompt user to enter their credentials to log in
+&nbsp;        while (true) {
+<b class="fc">&nbsp;            System.out.print(&quot;Enter your username: &quot;);</b>
+<b class="fc">&nbsp;            acadsection.username = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;            System.out.print(&quot;Enter your password: &quot;);</b>
+<b class="fc">&nbsp;            acadsection.password = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;            boolean isLoggedIn = acadsection.login(acadsection.username,acadsection.password);</b>
+&nbsp;
+<b class="pc">&nbsp;            if (isLoggedIn) {</b>
+<b class="fc">&nbsp;                break;</b>
+&nbsp;            } else {
+<b class="nc">&nbsp;                System.out.println(&quot;Invalid credentials. Please try again.\n&quot;);</b>
+&nbsp;            }
+<b class="nc">&nbsp;        }</b>
+&nbsp;
+&nbsp;// User is now logged in
+&nbsp;        while (true) {
+<b class="fc">&nbsp;            System.out.println(&quot;Choose an option:&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;0. Logout&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;1. Add a new batch&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;2. Add a new course&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;3. Add or update a curriculum&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;4. Start semester&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;5. End semester&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;6. Add course to course catalog&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;7. View grades of all students&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;8. Add users&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;9. Generate student transcripts&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;10. View transcript&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;11. View courses&quot;);</b>
+<b class="fc">&nbsp;            System.out.println(&quot;12. View users&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;            String choice = input.nextLine();</b>
+&nbsp;
+<b class="pc">&nbsp;            switch (choice) {</b>
+&nbsp;                case &quot;0&quot;:
+<b class="fc">&nbsp;                    acadsection.logout();</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;
+&nbsp;                case &quot;1&quot;:
+&nbsp;                    while (true) {
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter batch id: &quot;);</b>
+<b class="fc">&nbsp;                        String batchId = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter year: &quot;);</b>
+<b class="fc">&nbsp;                        String year = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter department id: &quot;);</b>
+<b class="fc">&nbsp;                        String departmentId = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;                        acadsection.addBatch(batchId, year, departmentId);</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Press 0 to exit or 1 to continue: &quot;);</b>
+<b class="fc">&nbsp;                        String exitChoice = input.nextLine();</b>
+<b class="pc">&nbsp;                        if (exitChoice.equals(&quot;0&quot;)) {</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        }
+<b class="nc">&nbsp;                    }</b>
+&nbsp;                    break;
+&nbsp;
+&nbsp;                case &quot;2&quot;:
+&nbsp;                    while (true) {
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter course id: &quot;);</b>
+<b class="fc">&nbsp;                        String courseId = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter course name: &quot;);</b>
+<b class="fc">&nbsp;                        String courseName = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter department id: &quot;);</b>
+<b class="fc">&nbsp;                        String departmentId = input.nextLine();</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter number of lectures per week: &quot;);</b>
+<b class="fc">&nbsp;                        int numLectures = Integer.parseInt(input.nextLine());</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter number of tutorials per week: &quot;);</b>
+<b class="fc">&nbsp;                        int numTutorials = Integer.parseInt(input.nextLine());</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter number of course practicals per week: &quot;);</b>
+<b class="fc">&nbsp;                        int numPracticals = Integer.parseInt(input.nextLine());</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter course credits: &quot;);</b>
+<b class="fc">&nbsp;                        int credits = Integer.parseInt(input.nextLine());</b>
+&nbsp;
+<b class="fc">&nbsp;                        List&lt;String&gt; prerequisites = new ArrayList&lt;&gt;();</b>
+&nbsp;                        while (true) {
+<b class="fc">&nbsp;                            System.out.print(&quot;Enter the course code of a prerequisite course or 0 to exit: &quot;);</b>
+<b class="fc">&nbsp;                            String prerequisite = input.nextLine();</b>
+<b class="fc">&nbsp;                            if (prerequisite.equals(&quot;0&quot;)) {</b>
+<b class="fc">&nbsp;                                break;</b>
+&nbsp;                            }
+<b class="fc">&nbsp;                            prerequisites.add(prerequisite);</b>
+<b class="fc">&nbsp;                        }</b>
+&nbsp;
+<b class="fc">&nbsp;                        acadsection.addCourse(courseId, courseName, departmentId, numLectures, numTutorials, numPracticals, credits, prerequisites);</b>
+&nbsp;
+<b class="fc">&nbsp;                        System.out.print(&quot;Press 0 to exit or 1 to continue: &quot;);</b>
+<b class="fc">&nbsp;                        String exitChoice = input.nextLine();</b>
+<b class="pc">&nbsp;                        if (exitChoice.equals(&quot;0&quot;)) {</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        }
+<b class="nc">&nbsp;                    }</b>
+&nbsp;                    break;
+&nbsp;
+&nbsp;                case &quot;3&quot;:
+&nbsp;                    while (true) {
+<b class="fc">&nbsp;                        System.out.print(&quot;Enter course id or 0 to exit: &quot;);</b>
+<b class="fc">&nbsp;                        String courseId = input.nextLine();</b>
+<b class="fc">&nbsp;                        if (courseId.equals(&quot;0&quot;)) {</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        }
+<b class="fc">&nbsp;                        System.out.println(&quot;enter the batch_id &quot;);</b>
+<b class="fc">&nbsp;                        String batch_id = input.nextLine();</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;enter the course type&quot;);</b>
+<b class="fc">&nbsp;                        String courseType = input.nextLine();</b>
+<b class="fc">&nbsp;                        acadsection.addCurriculum(courseId, courseType, batch_id);</b>
+<b class="fc">&nbsp;                    }</b>
+&nbsp;
+&nbsp;                    break;
+&nbsp;
+&nbsp;                case &quot;4&quot;:
+&nbsp;                    String academicYear, semester;
+<b class="fc">&nbsp;                    System.out.println(&quot;Enter the academic year:&quot;);</b>
+<b class="fc">&nbsp;                    academicYear = input.nextLine();</b>
+<b class="fc">&nbsp;                    System.out.println(&quot;Enter the semester (monsoon/winter):&quot;);</b>
+<b class="fc">&nbsp;                    semester = input.nextLine();</b>
+<b class="fc">&nbsp;                    acadsection.startSemester(academicYear,semester);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;5&quot;:
+<b class="fc">&nbsp;                    acadsection.endSemester();</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;6&quot;:
+<b class="fc">&nbsp;                    System.out.println(&quot;Enter course code or enter 0 to exit.&quot;);</b>
+<b class="fc">&nbsp;                    String courseCode = input.nextLine();</b>
+<b class="fc">&nbsp;                    acadsection.updateCourseCatalog(courseCode);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;7&quot;:
+<b class="fc">&nbsp;                    acadsection.showGrades();</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;8&quot;:
+<b class="fc">&nbsp;                    System.out.println(&quot;Press:\n0 to exit\n1 to add student\n2 to add instructor&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;                    String role = input.nextLine();</b>
+<b class="fc">&nbsp;                    List&lt;String&gt; info=new ArrayList&lt;String&gt;();</b>
+<b class="pc">&nbsp;                    if(role.equals(&quot;0&quot;)) break;</b>
+<b class="fc">&nbsp;                    else if(role.equals(&quot;1&quot;))</b>
+&nbsp;                    {
+<b class="fc">&nbsp;                        System.out.println(&quot;Enter name of the student&quot;);</b>
+<b class="fc">&nbsp;                        info.add(input.nextLine());</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;Enter batch ID of the student&quot;);</b>
+<b class="fc">&nbsp;                        info.add(input.nextLine());</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;Enter phone number of the student&quot;);</b>
+<b class="fc">&nbsp;                        info.add(input.nextLine());</b>
+&nbsp;                    }
+&nbsp;                    else{
+&nbsp;                        //String name, depId, phoneNumber;
+<b class="fc">&nbsp;                        System.out.println(&quot;Enter name of the instructor&quot;);</b>
+<b class="fc">&nbsp;                        info.add(input.nextLine());</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;Enter department ID of the instructor&quot;);</b>
+<b class="fc">&nbsp;                        info.add(input.nextLine());</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;Enter phone number of the instructor&quot;);</b>
+<b class="fc">&nbsp;                        info.add(input.nextLine());</b>
+&nbsp;                    }
+<b class="fc">&nbsp;                    acadsection.addUser(role,info);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;9&quot;:
+<b class="fc">&nbsp;                    System.out.println(&quot;Keep the transcript file ready.&quot;);</b>
+<b class="fc">&nbsp;                    System.out.println(&quot;Enter the student ID.&quot;);</b>
+<b class="fc">&nbsp;                    String studentId = input.nextLine();</b>
+<b class="fc">&nbsp;                    acadsection.submitTranscript(studentId);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;10&quot;:
+<b class="fc">&nbsp;                    System.out.println(&quot;Enter the student id:&quot;);</b>
+<b class="fc">&nbsp;                    String stuId = input.nextLine();</b>
+<b class="fc">&nbsp;                    acadsection.viewTranscript(stuId);</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;11&quot;:
+<b class="fc">&nbsp;                    acadsection.viewCourses();</b>
+<b class="fc">&nbsp;                    break;</b>
+&nbsp;                case &quot;12&quot;:
+<b class="nc">&nbsp;                    int c=0;</b>
+<b class="nc">&nbsp;                    System.out.println(&quot;Enter 1 for student and 2 for instructor:&quot;);</b>
+<b class="nc">&nbsp;                    c = input.nextInt();</b>
+<b class="nc">&nbsp;                    acadsection.viewUsers(c);</b>
+<b class="nc">&nbsp;                    break;</b>
+&nbsp;                default:
+<b class="fc">&nbsp;                    System.out.println(&quot;please follow the instructions&quot;);</b>
+&nbsp;                    break;
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;            break;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return true;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-07 22:59</div>
+</div>
+</body>
+</html>

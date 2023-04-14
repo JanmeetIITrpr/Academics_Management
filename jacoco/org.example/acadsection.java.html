@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>acadsection.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Tests in 'Acad_Mangement.test' Coverage Results</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">acadsection.java</span></div><h1>acadsection.java</h1><pre class="source lang-java linenums">package org.example;
+
+import org.jetbrains.annotations.NotNull;
+
+import java.io.*;
+import java.sql.*;
+import java.util.List;
+import java.util.Scanner;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDateTime;
+<span class="fc" id="L11">public class acadsection {</span>
+<span class="fc" id="L12">    static Connection connection = SQL.getConnection();</span>
+    //static Statement stmt = null;
+<span class="fc" id="L14">    static Scanner input = new Scanner(System.in);</span>
+
+<span class="fc" id="L16">    public  String username=&quot;&quot;,password=&quot;&quot;;</span>
+<span class="fc" id="L17">    public boolean user=false;</span>
+
+    public boolean login(String username,String password) throws IOException {
+        while(true){
+<span class="fc bfc" id="L21" title="All 2 branches covered.">            if (isValidCredentials(username, password)) {</span>
+<span class="fc" id="L22">                    writeLoginLog();</span>
+<span class="fc" id="L23">                    System.out.println(&quot;logged in successfully&quot;);</span>
+<span class="fc" id="L24">                    user=true;</span>
+            } else {
+<span class="fc" id="L26">                System.out.println(&quot;wrong credentials&quot;);</span>
+<span class="fc" id="L27">                return false;</span>
+            }
+<span class="fc" id="L29">            return true;</span>
+        }
+    }
+
+    private static boolean isValidCredentials(@NotNull String username, String password) {
+<span class="pc bpc" id="L34" title="1 of 4 branches missed.">        return username.equals(&quot;admin&quot;) &amp;&amp; password.equals(&quot;iitropar&quot;);</span>
+    }
+
+    private void writeLoginLog() throws IOException {
+<span class="fc" id="L38">        FileWriter fileWriter = new FileWriter(&quot;log.txt&quot;, true);</span>
+<span class="fc" id="L39">        BufferedWriter out = new BufferedWriter(fileWriter);</span>
+<span class="fc" id="L40">        DateTimeFormatter dtf = DateTimeFormatter.ofPattern(&quot;yyyy/MM/dd HH:mm:ss&quot;);</span>
+<span class="fc" id="L41">        LocalDateTime now = LocalDateTime.now();</span>
+<span class="fc" id="L42">        String time = dtf.format(now);</span>
+<span class="fc" id="L43">        String query = &quot;admin logged in on &quot; + time + &quot;\n&quot;;</span>
+        //String query2 = &quot;admin logged out on &quot; + time + &quot;\n&quot;;
+        //if(login()) out.write(query);
+<span class="fc" id="L46">        out.write(query);</span>
+        //else out.write(query2);
+<span class="fc" id="L48">        out.close();</span>
+<span class="fc" id="L49">    }</span>
+
+
+    public void logout() throws IOException {
+<span class="fc" id="L53">        writeLogoutLog();</span>
+<span class="fc" id="L54">        System.out.println(&quot;logged out successfully&quot;);</span>
+<span class="fc" id="L55">        user = false;</span>
+<span class="fc" id="L56">    }</span>
+    private static void writeLogoutLog() throws IOException {
+<span class="fc" id="L58">        FileWriter fileWriter = new FileWriter(&quot;log.txt&quot;, true);</span>
+<span class="fc" id="L59">        BufferedWriter out = new BufferedWriter(fileWriter);</span>
+<span class="fc" id="L60">        DateTimeFormatter dtf = DateTimeFormatter.ofPattern(&quot;yyyy/MM/dd HH:mm:ss&quot;);</span>
+<span class="fc" id="L61">        LocalDateTime now = LocalDateTime.now();</span>
+<span class="fc" id="L62">        String time = dtf.format(now);</span>
+<span class="fc" id="L63">        String query = &quot;admin logged out on &quot; + time + &quot;\n&quot;;</span>
+<span class="fc" id="L64">        out.write(query);</span>
+<span class="fc" id="L65">        out.close();</span>
+<span class="fc" id="L66">    }</span>
+
+    public static boolean showGrades() throws SQLException {
+<span class="fc" id="L69">        String query = &quot;SELECT student_id, course_id, Grade, semester, academic_year FROM grades&quot;;</span>
+<span class="fc" id="L70">            Statement stmt = connection.createStatement();</span>
+<span class="fc" id="L71">            ResultSet rs = stmt.executeQuery(query);</span>
+<span class="fc" id="L72">            ResultSetMetaData rsmd = rs.getMetaData();</span>
+<span class="fc" id="L73">            int columnCount = rsmd.getColumnCount();</span>
+<span class="fc" id="L74">            StringBuilder sb = new StringBuilder();</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">            while (rs.next()) {</span>
+<span class="fc bfc" id="L76" title="All 2 branches covered.">                for (int i = 1; i &lt;= columnCount; i++) {</span>
+<span class="fc" id="L77">                    String columnName = rsmd.getColumnName(i);</span>
+<span class="fc" id="L78">                    String columnValue = rs.getString(i);</span>
+<span class="fc" id="L79">                    sb.append(columnName).append(&quot; ---&gt; &quot;).append(columnValue).append(&quot;    &quot;);</span>
+                }
+<span class="fc" id="L81">                sb.append(System.lineSeparator());</span>
+            }
+<span class="fc" id="L83">            System.out.println(sb.toString());</span>
+//            System.out.println(&quot;Press any key to continue&quot;);
+//            input.nextLine();
+<span class="fc" id="L86">            return true;</span>
+        }
+
+
+
+    public static boolean updateCourseCatalog(String courseCode) throws SQLException {
+<span class="fc" id="L92">        PreparedStatement ps = connection.prepareStatement(&quot;SELECT * FROM semester&quot;);</span>
+<span class="fc" id="L93">        ResultSet rs = ps.executeQuery();</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">        if (!rs.next()) {</span>
+<span class="fc" id="L95">            System.out.println(&quot;Semester is not yet started.&quot;);</span>
+<span class="fc" id="L96">            return false;</span>
+        }
+<span class="pc bpc" id="L98" title="1 of 2 branches missed.">        if (courseCode.equals(&quot;0&quot;)) {</span>
+<span class="nc" id="L99">            return true;</span>
+        }
+
+<span class="fc" id="L102">            ps = connection.prepareStatement(&quot;INSERT INTO course_catalog (course_id) VALUES (?)&quot;);</span>
+<span class="fc" id="L103">            ps.setString(1, courseCode);</span>
+<span class="fc" id="L104">            ps.executeUpdate();</span>
+<span class="fc" id="L105">            System.out.println(&quot;Course added successfully.&quot;);</span>
+<span class="fc" id="L106">            return true;</span>
+        }
+
+    public static boolean deleteFromCourseCatalog(String courseCode) throws SQLException {
+<span class="fc" id="L110">        PreparedStatement ps = connection.prepareStatement(&quot;SELECT * FROM semester&quot;);</span>
+<span class="fc" id="L111">        ResultSet rs = ps.executeQuery();</span>
+        //Semester running check-use while App
+//        if (!rs.next()) {
+//            System.out.println(&quot;Semester is not yet started.&quot;);
+//            return false;
+//        }
+        while (true) {
+//            System.out.println(&quot;Enter course code or enter 0 to exit.&quot;);
+//            String c = input.nextLine();
+//            if (c.equals(&quot;0&quot;)) {
+//                break;
+//            }
+//            else c=courseCode;
+<span class="fc" id="L124">                ps = connection.prepareStatement(&quot;DELETE FROM course_catalog WHERE course_id=?&quot;);</span>
+<span class="fc" id="L125">                ps.setString(1, courseCode);</span>
+<span class="fc" id="L126">                ps.executeUpdate();</span>
+<span class="fc" id="L127">                System.out.println(&quot;Course deleted successfully.&quot;);</span>
+<span class="fc" id="L128">                return true;</span>
+            }
+    }
+
+    public boolean addBatch(String batchId, String year, String dep_id) {
+<span class="fc bfc" id="L133" title="All 2 branches covered.">        if(batch.add(batchId,year,dep_id)) return true;</span>
+<span class="fc" id="L134">        else return false;</span>
+    }
+
+    public boolean deleteBatch(String batchId) throws SQLException {
+<span class="pc bpc" id="L138" title="1 of 2 branches missed.">        if(batch.delete(batchId)) return true;</span>
+<span class="nc" id="L139">        else return false;</span>
+    }
+
+    public boolean addCurriculum(String courseId, String courseType, String batchId) {
+<span class="pc bpc" id="L143" title="1 of 2 branches missed.">        if(curriculum.add(courseId,courseType,batchId)) return true;</span>
+<span class="nc" id="L144">        else return false;</span>
+    }
+
+    public boolean deleteFromCurriculum(String courseId, String batchId) {
+<span class="pc bpc" id="L148" title="1 of 2 branches missed.">        if(curriculum.delete(courseId,batchId)) return true;</span>
+<span class="nc" id="L149">        else return false;</span>
+    }
+
+    public boolean addCourse(String courseId, String courseName, String depId, int l, int t, int p, int c, List&lt;String&gt; prereq) {
+<span class="pc bpc" id="L153" title="1 of 2 branches missed.">        if(course.add(courseId, courseName, depId, l, t, p, c, prereq))</span>
+<span class="fc" id="L154">            return true;</span>
+<span class="nc" id="L155">        else return false;</span>
+    }
+
+    public boolean deleteCourse(String courseId) {
+<span class="pc bpc" id="L159" title="1 of 2 branches missed.">        if(course.delete(courseId)) return true;</span>
+<span class="nc" id="L160">        else return false;</span>
+    }
+    public static String addUser(String role, List&lt;String&gt; info) throws SQLException {
+<span class="fc" id="L163">        return users.add(role,info);</span>
+    }
+
+    public static boolean deleteUser(String role, String id) {
+<span class="pc bpc" id="L167" title="1 of 2 branches missed.">      if(users.delete(role,id)) return true;</span>
+<span class="nc" id="L168">      else return false;</span>
+    }
+
+    public static boolean startSemester(String academicYear, String semester) throws SQLException {
+<span class="pc bpc" id="L172" title="1 of 2 branches missed.">        if(sem.start(academicYear,semester)) return true;</span>
+<span class="nc" id="L173">        else return false;</span>
+    }
+
+    public static String viewSemester()
+    {
+<span class="fc" id="L178">        return sem.view();</span>
+    }
+
+    public static boolean endSemester() {
+<span class="pc bpc" id="L182" title="1 of 2 branches missed.">        if(sem.end()) return true;</span>
+<span class="nc" id="L183">        else return false;</span>
+    }
+
+
+    public static boolean submitTranscript(String studentId) throws FileNotFoundException, SQLException {
+<span class="pc bpc" id="L188" title="1 of 2 branches missed.">        if(transcript.submit(studentId)) return true;</span>
+<span class="nc" id="L189">        else return false;</span>
+    }
+
+
+    public static boolean viewTranscript(String studentId) {
+<span class="pc bpc" id="L194" title="1 of 2 branches missed.">        if(transcript.view(studentId)) return true;</span>
+<span class="nc" id="L195">        else return false;</span>
+    }
+
+
+    public static boolean viewCourses() {
+<span class="pc bpc" id="L200" title="1 of 2 branches missed.">        if(course.view()) return true;</span>
+<span class="nc" id="L201">        else return false;</span>
+    }
+
+    public static boolean viewUsers(Integer choice) throws SQLException {
+<span class="fc bfc" id="L205" title="All 2 branches covered.">        if(users.view(choice)) return true;</span>
+<span class="fc" id="L206">        else return false;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

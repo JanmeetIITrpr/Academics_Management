@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>pupil.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Tests in 'org.example' Coverage Results</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">pupil.java</span></div><h1>pupil.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.io.*;
+import java.sql.*;
+import java.time.LocalDateTime;
+import java.util.Set;
+
+<span class="fc" id="L10">public class pupil {</span>
+<span class="fc" id="L11">    private static final Connection connection = SQL.getConnection();</span>
+
+<span class="fc" id="L13">    static Statement statement = null;</span>
+<span class="fc" id="L14">    private static final Scanner scanner = new Scanner(System.in);</span>
+
+<span class="fc" id="L16">    public static String userId = &quot;&quot;;</span>
+<span class="fc" id="L17">    public static String batch_id = &quot;&quot;;</span>
+<span class="fc" id="L18">    public static int credits = 0;</span>
+<span class="fc" id="L19">    public static boolean user = false;</span>
+<span class="fc" id="L20">    public static double mycgpa=0.0;</span>
+
+//    private static final String LOGIN_SUCCESS_MSG = &quot;Logged in successfully.&quot;;
+//    private static final String INVALID_CREDENTIALS_MSG = &quot;Invalid email or password.&quot;;
+    private static final String LOG_FILE_NAME = &quot;log.txt&quot;;
+    //private static final String LOG_MSG_FORMAT = &quot;student %s logged in on %s\n&quot;;
+
+<span class="fc" id="L27">    private static PreparedStatement updateTokenStatement = null;</span>
+<span class="fc" id="L28">    private static PreparedStatement selectStudentByIdStatement = null;</span>
+<span class="fc" id="L29">    private static String ui = &quot;-1&quot;;</span>
+<span class="fc" id="L30">    public static boolean userLoggedIn = false;</span>
+
+    public static boolean login(String email,String password) throws SQLException, IOException {
+<span class="fc" id="L33">                PreparedStatement loginStatement = connection.prepareStatement(</span>
+                        &quot;SELECT * FROM student WHERE email = ? AND password = ?&quot;
+                );
+<span class="fc" id="L36">                loginStatement.setString(1, email);</span>
+<span class="fc" id="L37">                loginStatement.setString(2, password);</span>
+<span class="fc" id="L38">                ResultSet rs = loginStatement.executeQuery();</span>
+
+<span class="fc bfc" id="L40" title="All 2 branches covered.">                if (rs.next()) {</span>
+<span class="fc" id="L41">                    ui = rs.getString(&quot;id&quot;);</span>
+<span class="fc" id="L42">                    userId=ui;</span>
+<span class="fc" id="L43">                    userLoggedIn = true;</span>
+<span class="fc" id="L44">                    user=true;</span>
+<span class="fc" id="L45">                    updateTokenStatement = connection.prepareStatement(</span>
+                            &quot;UPDATE student SET token = 'logged in' WHERE id = ?&quot;
+                    );
+<span class="fc" id="L48">                    updateTokenStatement.setString(1, ui);</span>
+
+<span class="fc" id="L50">                    String logMessage = &quot;student &quot; + userId + &quot; logged in on &quot; + LocalDateTime.now();</span>
+<span class="fc" id="L51">                    writeToLog(logMessage);</span>
+
+<span class="fc" id="L53">                    System.out.println(&quot;Logged in successfully!&quot;);</span>
+<span class="fc" id="L54">                } else {</span>
+<span class="fc" id="L55">                    System.out.println(&quot;Wrong credentials.&quot;);</span>
+//                    System.out.println(&quot;Press any key to continue.&quot;);
+//                    scanner.nextLine();
+<span class="fc" id="L58">                    return false;</span>
+                }
+        //}
+<span class="fc" id="L61">        return true;</span>
+    }
+
+    public static void logout() throws SQLException, IOException {
+<span class="fc" id="L65">            updateTokenStatement.setString(1, &quot;logged out&quot;);</span>
+<span class="fc" id="L66">            updateTokenStatement.executeUpdate();</span>
+
+<span class="fc" id="L68">            String logMessage = &quot;student &quot; + userId + &quot; logged out on &quot; + LocalDateTime.now();</span>
+<span class="fc" id="L69">            writeToLog(logMessage);</span>
+
+<span class="fc" id="L71">            ui = &quot;-1&quot;;</span>
+<span class="fc" id="L72">            userLoggedIn = false;</span>
+<span class="fc" id="L73">            user=false;</span>
+
+<span class="fc" id="L75">            System.out.println(&quot;Logged out successfully!&quot;);</span>
+<span class="fc" id="L76">    }</span>
+
+    public static boolean viewProfile(String userId) throws SQLException {
+<span class="fc bfc" id="L79" title="All 2 branches covered.">            if (selectStudentByIdStatement == null) {</span>
+<span class="fc" id="L80">                selectStudentByIdStatement = connection.prepareStatement(</span>
+                        &quot;SELECT id, name, batch_id, email, phone_number, credits FROM student WHERE id = ?&quot;
+                );
+            }
+<span class="fc" id="L84">            selectStudentByIdStatement.setString(1, userId);</span>
+<span class="fc" id="L85">            ResultSet rs = selectStudentByIdStatement.executeQuery();</span>
+
+<span class="pc bpc" id="L87" title="1 of 2 branches missed.">            if (rs.next()) {</span>
+<span class="fc" id="L88">                String id = rs.getString(&quot;id&quot;);</span>
+<span class="fc" id="L89">                String name = rs.getString(&quot;name&quot;);</span>
+<span class="fc" id="L90">                batch_id = rs.getString(&quot;batch_id&quot;);</span>
+<span class="fc" id="L91">                String email = rs.getString(&quot;email&quot;);</span>
+<span class="fc" id="L92">                String phoneNumber = rs.getString(&quot;phone_number&quot;);</span>
+<span class="fc" id="L93">                int credits = rs.getInt(&quot;credits&quot;);</span>
+
+<span class="fc" id="L95">                String responseQuery = String.format(</span>
+                        &quot;id ---&gt; %s\nname ---&gt; %s\nbatch_id ---&gt; %s\nemail ---&gt; %s\nphone_number ---&gt; %s\ncredits ---&gt; %d&quot;,
+<span class="fc" id="L97">                        id, name, batch_id, email, phoneNumber, credits</span>
+                );
+<span class="fc" id="L99">                System.out.println(responseQuery);</span>
+            }
+
+<span class="fc" id="L102">        return true;</span>
+    }
+    public static boolean updateProfile(String name,String phoneNumber,String password) throws SQLException {
+        // check if user is logged in
+<span class="pc bpc" id="L106" title="1 of 2 branches missed.">        if(!user) return false;</span>
+
+<span class="fc" id="L108">        String query = &quot;UPDATE student SET name = ?, phone_number = ?, password = ? WHERE id = ?&quot;;</span>
+
+<span class="fc" id="L110">            PreparedStatement preparedStatement = connection.prepareStatement(query);</span>
+<span class="fc" id="L111">            preparedStatement.setString(1, name);</span>
+<span class="fc" id="L112">            preparedStatement.setString(2, phoneNumber);</span>
+<span class="fc" id="L113">            preparedStatement.setString(3, password);</span>
+<span class="fc" id="L114">            preparedStatement.setString(4, userId);</span>
+
+<span class="fc" id="L116">            int rowsUpdated = preparedStatement.executeUpdate();</span>
+
+<span class="pc bpc" id="L118" title="1 of 2 branches missed.">            if (rowsUpdated &gt; 0) {</span>
+<span class="fc" id="L119">                System.out.println(&quot;Profile updated successfully!&quot;);</span>
+            } else {
+<span class="nc" id="L121">                System.out.println(&quot;No profile updated!&quot;);</span>
+            }
+<span class="fc" id="L123">        return true;</span>
+    }
+
+    public static boolean addCourse(String courseId) throws SQLException {
+//        if (!userLoggedIn) {
+//            return false;
+//        }
+        while (true) {
+<span class="fc bfc" id="L131" title="All 2 branches covered.">            if (courseId.equals(&quot;0&quot;)) {</span>
+<span class="fc" id="L132">                return true;</span>
+            }
+<span class="fc" id="L134">                String courseOfferingQuery = &quot;SELECT cgpa_limit, instructor_id FROM course_offering WHERE course_id = ?&quot;;</span>
+<span class="fc" id="L135">                PreparedStatement courseOfferingStatement = connection.prepareStatement(courseOfferingQuery);</span>
+<span class="fc" id="L136">                courseOfferingStatement.setString(1, courseId);</span>
+<span class="fc" id="L137">                ResultSet courseOfferingResultSet = courseOfferingStatement.executeQuery();</span>
+
+<span class="fc bfc" id="L139" title="All 2 branches covered.">                if (!courseOfferingResultSet.next()) {</span>
+<span class="fc" id="L140">                    System.out.println(&quot;No such course is offered.&quot;);</span>
+                    //scanner.nextLine();
+<span class="fc" id="L142">                    return true;</span>
+                }
+
+<span class="fc" id="L145">                double cgpaLimit = courseOfferingResultSet.getDouble(&quot;cgpa_limit&quot;);</span>
+<span class="fc" id="L146">                String instructorId = courseOfferingResultSet.getString(&quot;instructor_id&quot;);</span>
+
+<span class="pc bpc" id="L148" title="2 of 4 branches missed.">                if (isCgpaLessThanTwo() &amp;&amp; getCgpa(userId) &lt; cgpaLimit) {</span>
+<span class="nc" id="L149">                    System.out.println(&quot;You cannot take this course as your CGPA is less than required &quot; + cgpaLimit + &quot;.&quot;);</span>
+<span class="nc" id="L150">                    return true;</span>
+                }
+
+<span class="fc" id="L153">                String courseQuery = &quot;SELECT c FROM course WHERE id = ?&quot;;</span>
+<span class="fc" id="L154">                PreparedStatement courseStatement = connection.prepareStatement(courseQuery);</span>
+<span class="fc" id="L155">                courseStatement.setString(1, courseId);</span>
+<span class="fc" id="L156">                ResultSet courseResultSet = courseStatement.executeQuery();</span>
+
+<span class="pc bpc" id="L158" title="1 of 2 branches missed.">                if (courseResultSet.next()) {</span>
+<span class="fc" id="L159">                    int credits = courseResultSet.getInt(&quot;c&quot;);</span>
+
+<span class="pc bpc" id="L161" title="1 of 2 branches missed.">                    if (credits + getCreditsTakenThisSemester() &gt; 24) {</span>
+<span class="nc" id="L162">                        System.out.println(&quot;Your credit limit has exceeded for this semester.&quot;);</span>
+<span class="nc" id="L163">                        return true;</span>
+                    }
+                }
+
+<span class="fc" id="L167">                String prerequisitesQuery = &quot;SELECT prerequisites.course_id FROM prerequisites LEFT JOIN grades ON prerequisites.prerequisite_id = grades.course_id AND grades.student_id = ? WHERE prerequisites.course_id = ?&quot;;</span>
+<span class="fc" id="L168">                PreparedStatement prerequisitesStatement = connection.prepareStatement(prerequisitesQuery);</span>
+<span class="fc" id="L169">                prerequisitesStatement.setString(1, userId);</span>
+<span class="fc" id="L170">                prerequisitesStatement.setString(2, courseId);</span>
+<span class="fc" id="L171">                ResultSet prerequisitesResultSet = prerequisitesStatement.executeQuery();</span>
+
+<span class="pc bpc" id="L173" title="1 of 2 branches missed.">                if (prerequisitesResultSet.next()) {</span>
+<span class="fc" id="L174">                    System.out.println(&quot;You must complete the course &quot; + prerequisitesResultSet.getString(&quot;course_id&quot;) + &quot; first to register this course.&quot;);</span>
+                    //scanner.nextLine();
+                    //continue;
+                }
+
+<span class="fc" id="L179">                String registrationStatusQuery = &quot;INSERT INTO registration_status (course_id, student_id, instructor_id, status) VALUES (?, ?, ?, 'pending instructor approval')&quot;;</span>
+<span class="fc" id="L180">                PreparedStatement registrationStatusStatement = connection.prepareStatement(registrationStatusQuery);</span>
+<span class="fc" id="L181">                registrationStatusStatement.setString(1, courseId);</span>
+<span class="fc" id="L182">                registrationStatusStatement.setString(2, userId);</span>
+<span class="fc" id="L183">                registrationStatusStatement.setString(3, instructorId);</span>
+<span class="fc" id="L184">                registrationStatusStatement.executeUpdate();</span>
+
+<span class="fc" id="L186">                System.out.println(&quot;Course added successfully.&quot;);</span>
+
+<span class="fc" id="L188">            return true;</span>
+        }
+        //return true;
+    }
+
+
+    public static boolean offeredCourses() throws SQLException {
+<span class="fc" id="L195">        String query = &quot;SELECT co.course_id, co.cgpa_limit, uc.course_type, co.instructor_id FROM ug_curriculum uc JOIN course_offering co ON uc.course_id = co.course_id WHERE uc.batch_id = ?;&quot;;</span>
+<span class="fc" id="L196">            PreparedStatement ps = connection.prepareStatement(query);</span>
+<span class="fc" id="L197">            ps.setString(1, batch_id);</span>
+<span class="fc" id="L198">            ResultSet rs = ps.executeQuery();</span>
+<span class="fc" id="L199">            StringBuilder responseQuery = new StringBuilder();</span>
+<span class="fc bfc" id="L200" title="All 2 branches covered.">            while (rs.next()) {</span>
+<span class="fc" id="L201">                responseQuery.append(&quot;course_id ---&gt; &quot;).append(rs.getString(&quot;course_id&quot;)).append(&quot; &quot;)</span>
+<span class="fc" id="L202">                        .append(&quot;cgpa_limit &quot;).append(rs.getDouble(&quot;cgpa_limit&quot;)).append(&quot; &quot;)</span>
+<span class="fc" id="L203">                        .append(&quot;course_type ---&gt; &quot;).append(rs.getString(&quot;course_type&quot;)).append(&quot; &quot;)</span>
+<span class="fc" id="L204">                        .append(&quot;instructor_id ---&gt; &quot;).append(rs.getString(&quot;instructor_id&quot;)).append(&quot;\n&quot;);</span>
+            }
+<span class="fc" id="L206">            System.out.println(responseQuery);</span>
+//            System.out.println(&quot;Press any key to continue&quot;);
+//            scanner.nextLine();
+<span class="fc" id="L209">        return true;</span>
+    }
+
+    public static boolean mycourses() throws SQLException {
+<span class="fc" id="L213">        String query = &quot;SELECT course_id, instructor_id, status FROM registration_status WHERE student_id = ?&quot;;</span>
+<span class="fc" id="L214">            PreparedStatement statement = connection.prepareStatement(query);</span>
+<span class="fc" id="L215">            statement.setString(1, userId);</span>
+<span class="fc" id="L216">                ResultSet rs = statement.executeQuery();</span>
+<span class="pc bpc" id="L217" title="1 of 2 branches missed.">                if (!rs.isBeforeFirst()) System.out.println(&quot;You have no courses.&quot;);</span>
+
+
+<span class="fc" id="L220">                ResultSetMetaData rsmd = rs.getMetaData();</span>
+<span class="fc" id="L221">                int columnsNumber = rsmd.getColumnCount();</span>
+<span class="fc" id="L222">                StringBuilder responseQuery = new StringBuilder();</span>
+<span class="fc bfc" id="L223" title="All 2 branches covered.">                while (rs.next()) {</span>
+<span class="fc bfc" id="L224" title="All 2 branches covered.">                    for (int i = 1; i &lt;= columnsNumber; i++) {</span>
+<span class="fc bfc" id="L225" title="All 2 branches covered.">                        if (i == 1) {</span>
+<span class="fc" id="L226">                            responseQuery.append(&quot;Course ID: &quot;);</span>
+<span class="fc bfc" id="L227" title="All 2 branches covered.">                        } else if (i == 2) {</span>
+<span class="fc" id="L228">                            responseQuery.append(&quot;Instructor ID: &quot;);</span>
+<span class="pc bpc" id="L229" title="1 of 2 branches missed.">                        } else if (i == 3) {</span>
+<span class="fc" id="L230">                            responseQuery.append(&quot;Status: &quot;);</span>
+                        }
+<span class="fc" id="L232">                        responseQuery.append(rs.getString(i)).append(&quot; &quot;);</span>
+                    }
+<span class="fc" id="L234">                    responseQuery.append(&quot;\n&quot;);</span>
+                }
+<span class="fc" id="L236">                System.out.println(responseQuery);</span>
+<span class="fc" id="L237">        return true;</span>
+    }
+
+    public static boolean deleteCourse(String course_id) throws SQLException {
+        while (true) {
+<span class="fc bfc" id="L242" title="All 2 branches covered.">            if (course_id.equals(&quot;0&quot;)) {</span>
+<span class="fc" id="L243">                return true;</span>
+            }
+<span class="fc" id="L245">            String query = &quot;DELETE FROM registration_status WHERE course_id=? AND student_id=?;&quot;;</span>
+<span class="fc" id="L246">                PreparedStatement preparedStatement = connection.prepareStatement(query);</span>
+<span class="fc" id="L247">                preparedStatement.setString(1, course_id);</span>
+<span class="fc" id="L248">                preparedStatement.setString(2, userId);</span>
+<span class="fc" id="L249">                int rowsAffected = preparedStatement.executeUpdate();</span>
+<span class="pc bpc" id="L250" title="1 of 2 branches missed.">                if (rowsAffected &gt; 0) {</span>
+<span class="nc" id="L251">                    System.out.println(&quot;Course &quot; + course_id + &quot; has been successfully deleted.&quot;);</span>
+                } else {
+<span class="fc" id="L253">                    System.out.println(&quot;You have not registered for course &quot; + course_id + &quot; yet.&quot;);</span>
+                }
+<span class="fc" id="L255">            return true;</span>
+        }
+    }
+
+
+    public static boolean showGrades() throws SQLException {
+<span class="fc" id="L261">        String query = &quot;SELECT * FROM grades WHERE student_id = ?&quot;;</span>
+<span class="fc" id="L262">            PreparedStatement ps = connection.prepareStatement(query);</span>
+<span class="fc" id="L263">            ps.setString(1, userId);</span>
+<span class="fc" id="L264">            ResultSet rs = ps.executeQuery();</span>
+<span class="fc" id="L265">            ResultSetMetaData rsmd = rs.getMetaData();</span>
+<span class="fc" id="L266">            int columnsNumber = rsmd.getColumnCount();</span>
+<span class="fc" id="L267">            String responseQuery = &quot;&quot;;</span>
+<span class="fc" id="L268">            int f = 0;</span>
+<span class="fc bfc" id="L269" title="All 2 branches covered.">            while (rs.next()) {</span>
+<span class="fc" id="L270">                f++;</span>
+<span class="fc bfc" id="L271" title="All 2 branches covered.">                for (int i = 1; i &lt;= columnsNumber; i++) {</span>
+<span class="pc bpc" id="L272" title="1 of 7 branches missed.">                    switch (i) {</span>
+                        case 1:
+<span class="fc" id="L274">                            responseQuery += &quot;student_id ---&gt; &quot;;</span>
+<span class="fc" id="L275">                            break;</span>
+                        case 2:
+<span class="fc" id="L277">                            responseQuery += &quot;instructor_id ---&gt; &quot;;</span>
+<span class="fc" id="L278">                            break;</span>
+                        case 3:
+<span class="fc" id="L280">                            responseQuery += &quot;course_id ---&gt; &quot;;</span>
+<span class="fc" id="L281">                            break;</span>
+                        case 4:
+<span class="fc" id="L283">                            responseQuery += &quot;grade ---&gt; &quot;;</span>
+<span class="fc" id="L284">                            break;</span>
+                        case 5:
+<span class="fc" id="L286">                            responseQuery += &quot;semester ---&gt; &quot;;</span>
+<span class="fc" id="L287">                            break;</span>
+                        case 6:
+<span class="fc" id="L289">                            responseQuery += &quot;academic_year ---&gt; &quot;;</span>
+<span class="fc" id="L290">                            break;</span>
+                        default:
+                            break;
+                    }
+<span class="fc" id="L294">                    String columnValue = rs.getString(i);</span>
+<span class="fc" id="L295">                    responseQuery += columnValue + &quot;          &quot;;</span>
+                }
+<span class="fc" id="L297">                responseQuery += &quot;\n\n&quot;;</span>
+            }
+<span class="pc bpc" id="L299" title="1 of 2 branches missed.">            if (f == 0) {</span>
+<span class="nc" id="L300">                System.out.println(&quot;No grades to show yet&quot;);</span>
+            } else {
+<span class="fc" id="L302">                System.out.println(responseQuery);</span>
+            }
+<span class="fc" id="L304">        return true;</span>
+//        System.out.println(&quot;Press any key to continue&quot;);
+//        scanner.nextLine();
+    }
+
+
+    public static boolean gimmeCg(String userId) throws SQLException {
+<span class="fc" id="L311">        mycgpa=getCgpa(userId);</span>
+<span class="fc" id="L312">        return true;</span>
+    }
+    private static double getCgpa(String userId) throws SQLException {
+<span class="fc" id="L315">        String query = &quot;SELECT g.course_id, g.grade, c.c FROM grades g JOIN course c ON g.course_id=c.id WHERE g.student_id=?&quot;;</span>
+<span class="fc" id="L316">        double cgpa = 0.0;</span>
+        //double credits = 0;
+<span class="fc" id="L318">        double qualityPoints = 0.0;</span>
+
+<span class="fc" id="L320">            PreparedStatement statement = connection.prepareStatement(query);</span>
+<span class="fc" id="L321">            statement.setString(1, userId);</span>
+<span class="fc" id="L322">            ResultSet rs = statement.executeQuery();</span>
+<span class="fc" id="L323">            double netcredits=0.0;</span>
+<span class="fc bfc" id="L324" title="All 2 branches covered.">            while (rs.next()) {</span>
+<span class="fc" id="L325">                int credits = rs.getInt(3);</span>
+<span class="fc" id="L326">                String grade = rs.getString(2);</span>
+<span class="fc" id="L327">                netcredits+=credits;</span>
+<span class="pc bpc" id="L328" title="2 of 10 branches missed.">                switch (grade) {</span>
+                    case &quot;A&quot;:
+<span class="fc" id="L330">                        qualityPoints += 10*credits;</span>
+<span class="fc" id="L331">                        break;</span>
+                    case &quot;A-&quot;:
+<span class="nc" id="L333">                        qualityPoints += 9*credits ;</span>
+<span class="nc" id="L334">                        break;</span>
+                    case &quot;B&quot;:
+<span class="fc" id="L336">                        qualityPoints += 8*credits  ;</span>
+<span class="fc" id="L337">                        break;</span>
+                    case &quot;B-&quot;:
+<span class="fc" id="L339">                        qualityPoints += 7*credits  ;</span>
+<span class="fc" id="L340">                        break;</span>
+                    case &quot;C&quot;:
+<span class="fc" id="L342">                        qualityPoints += 6*credits  ;</span>
+<span class="fc" id="L343">                        break;</span>
+                    case &quot;C-&quot;:
+<span class="fc" id="L345">                        qualityPoints += 5*credits ;</span>
+<span class="fc" id="L346">                        break;</span>
+                    case &quot;D&quot;:
+<span class="fc" id="L348">                        qualityPoints += 4*credits ;</span>
+<span class="fc" id="L349">                        break;</span>
+                    case &quot;E&quot;:
+<span class="fc" id="L351">                        qualityPoints += 2*credits ;</span>
+<span class="fc" id="L352">                        break;</span>
+                    case &quot;F&quot;:
+<span class="fc" id="L354">                        qualityPoints += 0*credits;</span>
+                        break;
+                }
+                //System.out.println(credits +&quot; &quot; + qualityPoints);
+
+<span class="fc" id="L359">            }</span>
+<span class="fc bfc" id="L360" title="All 2 branches covered.">            if (netcredits &gt; 0) {</span>
+<span class="fc" id="L361">                cgpa = qualityPoints / netcredits;</span>
+            }
+<span class="fc" id="L363">        return cgpa;</span>
+    }
+
+
+
+
+    public static boolean checkGraduationEligibility() throws SQLException {
+<span class="fc" id="L370">        String coreCourseQuery = &quot;SELECT course_id FROM ug_curriculum WHERE course_type = 'core'&quot;;</span>
+<span class="fc" id="L371">        String studentGradeQuery = &quot;SELECT course_id FROM grades WHERE student_id = ? AND grade &lt;&gt; 'F'&quot;;</span>
+<span class="fc" id="L372">        int numberOfCoreCourses = 0, numberOfFailedCourses = 0;</span>
+
+<span class="fc" id="L374">            PreparedStatement coreCourseStmt = connection.prepareStatement(coreCourseQuery);</span>
+<span class="fc" id="L375">            ResultSet coreCourseRs = coreCourseStmt.executeQuery();</span>
+<span class="fc" id="L376">            PreparedStatement studentGradeStmt = connection.prepareStatement(studentGradeQuery);</span>
+<span class="fc" id="L377">            studentGradeStmt.setString(1, userId);</span>
+<span class="fc" id="L378">            ResultSet studentGradeRs = studentGradeStmt.executeQuery();</span>
+
+<span class="fc" id="L380">            Set&lt;String&gt; coreCourses = new HashSet&lt;&gt;();</span>
+<span class="fc bfc" id="L381" title="All 2 branches covered.">            while (coreCourseRs.next()) {</span>
+<span class="fc" id="L382">                coreCourses.add(coreCourseRs.getString(&quot;course_id&quot;));</span>
+            }
+
+<span class="fc bfc" id="L385" title="All 2 branches covered.">            while (studentGradeRs.next()) {</span>
+<span class="pc bpc" id="L386" title="1 of 2 branches missed.">                if (coreCourses.contains(studentGradeRs.getString(&quot;course_id&quot;))) {</span>
+<span class="nc" id="L387">                    numberOfCoreCourses++;</span>
+                } else {
+<span class="fc" id="L389">                    numberOfFailedCourses++;</span>
+                }
+            }
+
+<span class="fc" id="L393">            coreCourseStmt.close();</span>
+<span class="fc" id="L394">            studentGradeStmt.close();</span>
+
+<span class="pc bpc" id="L396" title="3 of 4 branches missed.">            if (numberOfCoreCourses == coreCourses.size() &amp;&amp; numberOfFailedCourses == 0) {</span>
+<span class="nc" id="L397">                System.out.println(&quot;Congratulations! You are eligible for graduation.&quot;);</span>
+            } else {
+<span class="fc" id="L399">                System.out.println(&quot;Sorry, you are not eligible for graduation.&quot;);</span>
+            }
+<span class="fc" id="L401">            return true;</span>
+        }
+
+    private static boolean isCgpaLessThanTwo () throws SQLException {
+<span class="fc" id="L405">        String query=&quot;select count(*) from grades where student_id='&quot;+userId+&quot;' GROUP BY academic_year,semester;&quot;;</span>
+<span class="fc" id="L406">        int f=0;</span>
+
+<span class="fc" id="L408">            statement = connection.createStatement();</span>
+<span class="fc" id="L409">            ResultSet rs= statement.executeQuery(query);</span>
+<span class="fc bfc" id="L410" title="All 2 branches covered.">            while(rs.next()) {</span>
+<span class="fc" id="L411">                f++;</span>
+            }
+<span class="pc bpc" id="L413" title="1 of 2 branches missed.">        if(f&lt;2)return true;</span>
+<span class="nc" id="L414">        else return false;</span>
+    }
+
+
+    private static int getCreditsTakenThisSemester() throws SQLException {
+<span class="fc" id="L419">        String query = &quot;SELECT SUM(c) FROM registration_status JOIN course ON registration_status.course_id=course.id WHERE student_id='&quot; + userId + &quot;' AND status='approved';&quot;;</span>
+<span class="fc" id="L420">        ResultSet rs = statement.executeQuery(query);</span>
+<span class="pc bpc" id="L421" title="1 of 2 branches missed.">        if (rs.next()) {</span>
+<span class="fc" id="L422">            return rs.getInt(1);</span>
+        } else {
+<span class="nc" id="L424">            return 0;</span>
+        }
+    }
+    private static void writeToLog(String message) throws IOException {
+<span class="fc" id="L428">            BufferedWriter out = new BufferedWriter(new FileWriter(LOG_FILE_NAME, true));</span>
+<span class="fc" id="L429">            out.write(message + &quot;\n&quot;);</span>
+<span class="fc" id="L430">            out.close();</span>
+<span class="fc" id="L431">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

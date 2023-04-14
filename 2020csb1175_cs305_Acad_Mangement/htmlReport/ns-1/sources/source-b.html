@@ -1,0 +1,220 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > sem</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: sem (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">sem</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    89.4%
+  </span>
+  <span class="absValue">
+    (42/47)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.sql.*;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class sem {</b>
+&nbsp;
+<b class="fc">&nbsp;    static final Connection connection = SQL.getConnection();</b>
+<b class="fc">&nbsp;    static Scanner input = new Scanner(System.in);</b>
+&nbsp;    public static boolean start(String academicYear, String semester) throws SQLException {
+<b class="fc">&nbsp;            Statement stmt = connection.createStatement();</b>
+<b class="fc">&nbsp;            ResultSet rs = stmt.executeQuery(&quot;SELECT COUNT(*) FROM semester;&quot;);</b>
+<b class="fc">&nbsp;            rs.next();</b>
+<b class="fc">&nbsp;            int rowCount = rs.getInt(1);</b>
+<b class="fc">&nbsp;            if (rowCount &gt; 0) {</b>
+<b class="fc">&nbsp;                System.out.println(&quot;A semester is already running.&quot;);</b>
+&nbsp;//                System.out.println(&quot;Press any key to continue.&quot;);
+&nbsp;//                input.nextLine();
+&nbsp;            }
+&nbsp;
+&nbsp;
+&nbsp;//        String catalogue_query = &quot;CREATE TABLE course_catalog(\n&quot; +
+&nbsp;//                &quot;course_id VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;PRIMARY KEY(course_id),\n&quot; +
+&nbsp;//                &quot;FOREIGN KEY (course_id) references course (id)\n&quot; +
+&nbsp;//                &quot;);&quot;;
+&nbsp;//        String offer_query = &quot;CREATE TABLE course_offering(\n&quot; +
+&nbsp;//                &quot;course_id VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;cgpa_limit INTEGER,\n&quot; +
+&nbsp;//                &quot;instructor_id VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;PRIMARY KEY(course_id),\n&quot; +
+&nbsp;//                &quot;FOREIGN KEY (course_id) references course_catalog (course_id),\n&quot; +
+&nbsp;//                &quot;FOREIGN KEY (instructor_id) references faculty (id)\n&quot; +
+&nbsp;//                &quot;);&quot;;
+&nbsp;//        String sem_query = &quot;CREATE TABLE semester(\n&quot; +
+&nbsp;//                &quot;academic_year VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;semester VARCHAR(10)\n&quot; +
+&nbsp;//                &quot;);&quot;;
+&nbsp;//        String reg_query = &quot;CREATE TABLE registration_status(\n&quot; +
+&nbsp;//                &quot;course_id VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;student_id VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;instructor_id VARCHAR(10),\n&quot; +
+&nbsp;//                &quot;status VARCHAR(100),\n&quot; +
+&nbsp;//                &quot;FOREIGN KEY (course_id) references course_offering (course_id),\n&quot; +
+&nbsp;//                &quot;FOREIGN KEY (student_id) references student (id),\n&quot; +
+&nbsp;//                &quot;FOREIGN KEY (instructor_id) references faculty (id)\n&quot; +
+&nbsp;//                &quot;);&quot;;
+&nbsp;//        String up_query = &quot;UPDATE student SET credits = 0&quot;;
+&nbsp;
+&nbsp;            //Statement stmt = connection.createStatement();
+&nbsp;//                stmt.execute(catalogue_query);
+&nbsp;//                stmt.execute(offer_query);
+&nbsp;//                stmt.execute(sem_query);
+&nbsp;//                stmt.execute(reg_query);
+&nbsp;
+<b class="fc">&nbsp;                String query = &quot;INSERT INTO semester(academic_year,semester) VALUES (?, ?);&quot;;</b>
+<b class="fc">&nbsp;                PreparedStatement pstmt = connection.prepareStatement(query);</b>
+<b class="fc">&nbsp;                pstmt.setString(1, academicYear);</b>
+<b class="fc">&nbsp;                pstmt.setString(2, semester);</b>
+<b class="fc">&nbsp;                pstmt.executeUpdate();</b>
+&nbsp;                //return true;
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(academicYear + &quot;-&quot; + semester + &quot; started successfully.&quot;);</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Please add courses to the current semester&#39;s course catalog.&quot;);</b>
+&nbsp;//        System.out.println(&quot;Press any key to continue.&quot;);
+&nbsp;//        input.nextLine();
+<b class="fc">&nbsp;        return true;</b>
+&nbsp;    }
+&nbsp;
+<b class="fc">&nbsp;    public static String AY = &quot;&quot;;</b>
+<b class="fc">&nbsp;    public static String SEM = &quot;&quot;;</b>
+&nbsp;    public static String view()
+&nbsp;    {
+&nbsp;        try {
+<b class="fc">&nbsp;            PreparedStatement ps = connection.prepareStatement(&quot;SELECT * FROM semester&quot;);</b>
+<b class="fc">&nbsp;            ResultSet rs = ps.executeQuery();</b>
+<b class="fc">&nbsp;            while(rs.next()) {</b>
+<b class="fc">&nbsp;                AY = rs.getString(1);</b>
+<b class="fc">&nbsp;                SEM = rs.getString(2);</b>
+&nbsp;            }
+<b class="fc">&nbsp;            ps.close();</b>
+<b class="fc">&nbsp;            rs.close();</b>
+<b class="fc">&nbsp;            return &quot;Year: &quot;+ AY +&quot; Semester: &quot; + SEM;</b>
+<b class="nc">&nbsp;        } catch (SQLException e) {</b>
+<b class="nc">&nbsp;            return &quot;No semester is running.&quot;;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public static boolean end() {
+<b class="fc">&nbsp;        if(sem.view().equals(&quot;No semester is running.&quot;)) return false;</b>
+&nbsp;        else{
+&nbsp;            try {
+<b class="fc">&nbsp;                PreparedStatement ps1 = connection.prepareStatement(&quot;TRUNCATE TABLE course_catalog CASCADE&quot;);</b>
+<b class="fc">&nbsp;                PreparedStatement ps2 = connection.prepareStatement(&quot;TRUNCATE TABLE course_offering CASCADE&quot;);</b>
+<b class="fc">&nbsp;                PreparedStatement ps3 = connection.prepareStatement(&quot;TRUNCATE TABLE registration_status CASCADE&quot;);</b>
+<b class="fc">&nbsp;                PreparedStatement ps4 = connection.prepareStatement(&quot;TRUNCATE TABLE semester CASCADE&quot;);</b>
+<b class="fc">&nbsp;                ps1.executeUpdate();</b>
+<b class="fc">&nbsp;                ps2.executeUpdate();</b>
+<b class="fc">&nbsp;                ps3.executeUpdate();</b>
+<b class="fc">&nbsp;                ps4.executeUpdate();</b>
+<b class="fc">&nbsp;                ps1.close();</b>
+<b class="fc">&nbsp;                ps2.close();</b>
+<b class="fc">&nbsp;                ps3.close();</b>
+<b class="fc">&nbsp;                ps4.close();</b>
+<b class="nc">&nbsp;            } catch (SQLException e) {</b>
+<b class="nc">&nbsp;                throw new RuntimeException(e);</b>
+<b class="fc">&nbsp;            }</b>
+<b class="fc">&nbsp;            System.out.println(AY + &quot;-&quot; + SEM + &quot; ended successfully.&quot;);</b>
+&nbsp;//            System.out.println(&quot;Press any key to continue.&quot;);
+&nbsp;//            input.nextLine();
+<b class="fc">&nbsp;            return true;</b>
+&nbsp;        }
+&nbsp;
+&nbsp;    }
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-30 19:48</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > course</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: course (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">course</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    83.3%
+  </span>
+  <span class="absValue">
+    (5/6)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    94.8%
+  </span>
+  <span class="absValue">
+    (91/96)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.sql.*;
+&nbsp;import java.util.List;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class course {</b>
+&nbsp;
+<b class="fc">&nbsp;    static final Connection connection = SQL.getConnection();</b>
+<b class="fc">&nbsp;    static Scanner input = new Scanner(System.in);</b>
+&nbsp;
+&nbsp;    public static boolean add(String courseId, String courseName, String depId, int l, int t, int p, int c, List&lt;String&gt; prereq) {
+<b class="fc">&nbsp;        String insertCourseQuery = &quot;INSERT INTO course(id, name, dep_id, l, t, p, c) VALUES (?, ?, ?, ?, ?, ?, ?);&quot;;</b>
+<b class="fc">&nbsp;        String insertPrereqQuery = &quot;INSERT INTO prerequisites(course_id, prerequisite_id) VALUES (?, ?);&quot;;</b>
+&nbsp;
+<b class="fc">&nbsp;        try (PreparedStatement stmt = connection.prepareStatement(insertCourseQuery);</b>
+<b class="fc">&nbsp;             PreparedStatement prereqStmt = connection.prepareStatement(insertPrereqQuery)) {</b>
+&nbsp;            // Set parameters for insert course query
+<b class="fc">&nbsp;            stmt.setString(1, courseId);</b>
+<b class="fc">&nbsp;            stmt.setString(2, courseName);</b>
+<b class="fc">&nbsp;            stmt.setString(3, depId);</b>
+<b class="fc">&nbsp;            stmt.setInt(4, l);</b>
+<b class="fc">&nbsp;            stmt.setInt(5, t);</b>
+<b class="fc">&nbsp;            stmt.setInt(6, p);</b>
+<b class="fc">&nbsp;            stmt.setInt(7, c);</b>
+&nbsp;            // Execute insert course query
+<b class="fc">&nbsp;            stmt.executeUpdate();</b>
+&nbsp;
+&nbsp;            // Set parameters for insert prerequisites query
+<b class="fc">&nbsp;            for (String pre : prereq) {</b>
+<b class="fc">&nbsp;                prereqStmt.setString(1, courseId);</b>
+<b class="fc">&nbsp;                prereqStmt.setString(2, pre);</b>
+&nbsp;                // Execute insert prerequisites query
+<b class="fc">&nbsp;                prereqStmt.executeUpdate();</b>
+<b class="fc">&nbsp;            }</b>
+&nbsp;
+<b class="fc">&nbsp;            return true;</b>
+<b class="fc">&nbsp;        } catch (SQLException e) {</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Error adding course: &quot; + e.getMessage());</b>
+<b class="fc">&nbsp;            return true;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public static boolean delete(String courseId) {
+<b class="fc">&nbsp;        String deleteCourseQuery = &quot;DELETE FROM course WHERE id = ?;&quot;;</b>
+<b class="fc">&nbsp;        String deletePrereqQuery = &quot;DELETE FROM prerequisites WHERE course_id = ? OR prerequisite_id = ?;&quot;;</b>
+&nbsp;
+<b class="fc">&nbsp;        try (PreparedStatement stmt = connection.prepareStatement(deleteCourseQuery);</b>
+<b class="fc">&nbsp;             PreparedStatement prereqStmt = connection.prepareStatement(deletePrereqQuery)) {</b>
+&nbsp;            // Set parameters for course deletion query
+<b class="fc">&nbsp;            stmt.setString(1, courseId);</b>
+&nbsp;            // Execute course deletion query
+<b class="fc">&nbsp;            stmt.executeUpdate();</b>
+&nbsp;
+&nbsp;             //Set parameters for prerequisites deletion query
+<b class="fc">&nbsp;            prereqStmt.setString(1, courseId);</b>
+<b class="fc">&nbsp;            prereqStmt.setString(2, courseId);</b>
+&nbsp;            // Execute prerequisites deletion query
+<b class="fc">&nbsp;            prereqStmt.executeUpdate();</b>
+&nbsp;
+<b class="fc">&nbsp;        } catch (SQLException e) {</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Error deleting course: &quot; + e.getMessage());</b>
+<b class="fc">&nbsp;            return true;</b>
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;        return true;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static boolean view() {
+<b class="fc">&nbsp;        String query = &quot;SELECT id, name, dep_id, l, t, p, c FROM course&quot;;</b>
+<b class="fc">&nbsp;        try (PreparedStatement ps = connection.prepareStatement(query);</b>
+<b class="fc">&nbsp;             ResultSet rs = ps.executeQuery()) {</b>
+<b class="fc">&nbsp;            ResultSetMetaData rsmd = rs.getMetaData();</b>
+<b class="fc">&nbsp;            int numColumns = rsmd.getColumnCount();</b>
+<b class="fc">&nbsp;            StringBuilder responseQuery = new StringBuilder();</b>
+<b class="fc">&nbsp;            while (rs.next()) {</b>
+<b class="fc">&nbsp;                for (int i = 1; i &lt;= numColumns; i++) {</b>
+<b class="fc">&nbsp;                    switch (i) {</b>
+&nbsp;                        case 1:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;course_id ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        case 2:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;name ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        case 3:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;dep_id ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        case 4:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;l ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        case 5:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;t ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        case 6:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;p ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        case 7:
+<b class="fc">&nbsp;                            responseQuery.append(&quot;c ---&gt; &quot;);</b>
+<b class="fc">&nbsp;                            break;</b>
+&nbsp;                        default:
+&nbsp;                            // do nothing
+&nbsp;                    }
+<b class="fc">&nbsp;                    String columnValue = rs.getString(i);</b>
+<b class="fc">&nbsp;                    responseQuery.append(columnValue).append(&quot; &quot;);</b>
+&nbsp;                }
+<b class="fc">&nbsp;                responseQuery.append(&quot;\n&quot;);</b>
+&nbsp;            }
+<b class="fc">&nbsp;            System.out.println(responseQuery.toString());</b>
+&nbsp;//            System.out.println(&quot;Press any key to continue&quot;);
+&nbsp;//            input.nextLine();
+&nbsp;            //return true;
+<b class="fc">&nbsp;        } catch (SQLException e) {</b>
+<b class="nc">&nbsp;            System.out.println(&quot;No courses to show&quot;);</b>
+&nbsp;            //throw new RuntimeException(e);
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;        return true;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public static boolean facultyAdd(String courseId,double cgpaLimit) throws SQLException {
+&nbsp;        while (true) {
+&nbsp;
+<b class="fc">&nbsp;            if (courseId.equals(&quot;0&quot;)) break;</b>
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;            String catalogQuery = &quot;SELECT * FROM course_catalog WHERE course_id=?&quot;;</b>
+<b class="fc">&nbsp;            PreparedStatement catalogStmt = connection.prepareStatement(catalogQuery);</b>
+<b class="fc">&nbsp;            catalogStmt.setString(1, courseId);</b>
+&nbsp;
+<b class="fc">&nbsp;            ResultSet catalogRs = catalogStmt.executeQuery();</b>
+&nbsp;
+<b class="fc">&nbsp;            while (!catalogRs.next()) {</b>
+<b class="fc">&nbsp;                System.out.println(&quot;Course not found in the course catalog.&quot;);</b>
+<b class="fc">&nbsp;                return false;</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;            String offeringQuery = &quot;SELECT instructor_id FROM course_offering WHERE course_id=?&quot;;</b>
+<b class="fc">&nbsp;            PreparedStatement offeringStmt = connection.prepareStatement(offeringQuery);</b>
+<b class="fc">&nbsp;            offeringStmt.setString(1, courseId);</b>
+&nbsp;
+<b class="fc">&nbsp;            ResultSet offeringRs = offeringStmt.executeQuery();</b>
+&nbsp;
+<b class="fc">&nbsp;            if (offeringRs.next()) {</b>
+<b class="fc">&nbsp;                System.out.println(&quot;This course is already offered by instructor &quot; + offeringRs.getString(1) + &quot;.&quot;);</b>
+<b class="fc">&nbsp;                return true;</b>
+&nbsp;            }
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;            String insertQuery = &quot;INSERT INTO course_offering(course_id, cgpa_limit, instructor_id) VALUES (?, ?, ?)&quot;;</b>
+<b class="fc">&nbsp;            PreparedStatement insertStmt = connection.prepareStatement(insertQuery);</b>
+<b class="fc">&nbsp;            insertStmt.setString(1, courseId);</b>
+<b class="fc">&nbsp;            insertStmt.setDouble(2, cgpaLimit);</b>
+<b class="fc">&nbsp;            insertStmt.setString(3, faculty.user_id);</b>
+&nbsp;
+<b class="fc">&nbsp;            int rowsAffected = insertStmt.executeUpdate();</b>
+&nbsp;
+<b class="fc">&nbsp;            if (rowsAffected &gt; 0) {</b>
+<b class="fc">&nbsp;                System.out.println(&quot;Course added successfully.&quot;);</b>
+&nbsp;            } else {
+<b class="nc">&nbsp;                System.out.println(&quot;Course could not be added.&quot;);</b>
+<b class="nc">&nbsp;                return false;</b>
+&nbsp;            }
+&nbsp;
+<b class="fc">&nbsp;        }</b>
+<b class="nc">&nbsp;        return true;</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-30 19:48</div>
+</div>
+</body>
+</html>

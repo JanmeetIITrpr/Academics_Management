@@ -1,0 +1,768 @@
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: A
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: B-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: C-
+AY: monsoon
+Semester: 2020
+
+Course ID: DM100
+Course Name: dummboy
+Credits: 3
+Faculty ID: CS0
+Grade: B
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: C
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: E
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: F
+AY: monsoon
+Semester: 2020
+
+Course ID: CS301
+Course Name: DB
+Credits: 3
+Faculty ID: CS0
+Grade: D
+AY: monsoon
+Semester: 2020
+

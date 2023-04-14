@@ -1,0 +1,144 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > batch</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: batch (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">batch</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    94.1%
+  </span>
+  <span class="absValue">
+    (16/17)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.sql.Connection;
+&nbsp;import java.sql.PreparedStatement;
+&nbsp;import java.sql.SQLException;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class batch {</b>
+<b class="fc">&nbsp;    static final Connection connection = SQL.getConnection();</b>
+&nbsp;
+&nbsp;    public static boolean add(String batchId, String year, String dep_id) {
+&nbsp;        try {
+&nbsp;            //Connection conn = SQL.getConnection();
+<b class="fc">&nbsp;            PreparedStatement stmt = connection.prepareStatement(&quot;INSERT INTO batch(id, year, dep_id) VALUES (?, ?, ?)&quot;);</b>
+<b class="fc">&nbsp;            stmt.setString(1, batchId);</b>
+<b class="fc">&nbsp;            stmt.setString(2, year);</b>
+<b class="fc">&nbsp;            stmt.setString(3, dep_id);</b>
+<b class="fc">&nbsp;            stmt.executeUpdate();</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Batch added successfully&quot;);</b>
+<b class="fc">&nbsp;            return true;</b>
+<b class="fc">&nbsp;        } catch (SQLException e) {</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Error while adding batch: &quot; + e.getMessage());</b>
+<b class="fc">&nbsp;            return false;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    public static boolean delete(String batchId) throws SQLException {
+&nbsp;//        try {
+&nbsp;            //Connection conn = DatabaseConnection.getConnection();
+<b class="fc">&nbsp;            PreparedStatement stmt = connection.prepareStatement(&quot;DELETE FROM batch WHERE id = ?&quot;);</b>
+<b class="fc">&nbsp;            stmt.setString(1, batchId);</b>
+<b class="fc">&nbsp;            stmt.executeUpdate();</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Batch deleted successfully&quot;);</b>
+<b class="fc">&nbsp;            return true;</b>
+&nbsp;//        } catch (SQLException e) {
+&nbsp;//            System.out.println(&quot;Error while deleting batch: &quot; + e.getMessage());
+&nbsp;//            return false;
+&nbsp;//        }
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-30 19:48</div>
+</div>
+</body>
+</html>

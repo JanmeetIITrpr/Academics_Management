@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.acadmenuTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-03-31T15:51:11" hostname="JANMEETZEN" time="0.341">
+  <properties/>
+  <testcase name="testHandleacadmenu1()" classname="org.example.acadmenuTest" time="0.062"/>
+  <testcase name="testHandleacadmenu2()" classname="org.example.acadmenuTest" time="0.045"/>
+  <testcase name="testHandleacadmenu3()" classname="org.example.acadmenuTest" time="0.018"/>
+  <testcase name="testHandleacadmenu4()" classname="org.example.acadmenuTest" time="0.01"/>
+  <testcase name="testHandleacadmenu5()" classname="org.example.acadmenuTest" time="0.043"/>
+  <testcase name="testHandleacadmenu6()" classname="org.example.acadmenuTest" time="0.059"/>
+  <testcase name="testHandleacadmenu7()" classname="org.example.acadmenuTest" time="0.008"/>
+  <testcase name="testHandleacadmenu8()" classname="org.example.acadmenuTest" time="0.024"/>
+  <testcase name="testHandleacadmenu9()" classname="org.example.acadmenuTest" time="0.04"/>
+  <testcase name="testHandleacadmenu10()" classname="org.example.acadmenuTest" time="0.008"/>
+  <testcase name="testHandleacadmenu11()" classname="org.example.acadmenuTest" time="0.005"/>
+  <testcase name="testHandleacadmenu13()" classname="org.example.acadmenuTest" time="0.004"/>
+  <system-out><![CDATA[Connected to PSQL database successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter batch id: Enter year: Enter department id: Error while adding batch: ERROR: duplicate key value violates unique constraint "batch_pkey"
+  Detail: Key (id)=(2021eeb) already exists.
+Press 0 to exit or 1 to continue: Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter course id: Enter course name: Enter department id: Enter number of lectures per week: Enter number of tutorials per week: Enter number of course practicals per week: Enter course credits: Enter the course code of a prerequisite course or 0 to exit: Enter the course code of a prerequisite course or 0 to exit: Error adding course: ERROR: duplicate key value violates unique constraint "course_pkey"
+  Detail: Key (id)=(SE420) already exists.
+Press 0 to exit or 1 to continue: Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter course id or 0 to exit: enter the batch_id 
+enter the course type
+Enter course id or 0 to exit: Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter the academic year:
+Enter the semester (monsoon/winter):
+A semester is already running.
+2021-winter started successfully.
+Please add courses to the current semester's course catalog.
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+2021-winter ended successfully.
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter course code or enter 0 to exit.
+Semester is not yet started.
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> A    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> B-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> C-    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> DM100    grade ---> B    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> C    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> E    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> F    semester ---> monsoon    academic_year ---> 2020    
+student_id ---> 2020csb0    course_id ---> CS301    grade ---> D    semester ---> monsoon    academic_year ---> 2020    
+
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Press:
+0 to exit
+1 to add student
+2 to add instructor
+Enter name of the student
+Enter batch ID of the student
+Enter phone number of the student
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Press:
+0 to exit
+1 to add student
+2 to add instructor
+Enter name of the instructor
+Enter department ID of the instructor
+Enter phone number of the instructor
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Keep the transcript file ready.
+Enter the student ID.
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+Enter the student id:
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+Enter your username: Enter your password: logged in successfully
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+please follow the instructions
+Choose an option:
+0. Logout
+1. Add a new batch
+2. Add a new course
+3. Add or update a curriculum
+4. Start semester
+5. End semester
+6. Add course to course catalog
+7. View grades of all students
+8. Add users
+9. Generate student transcripts
+10. View transcript
+11. View courses
+12. View users
+logged out successfully
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

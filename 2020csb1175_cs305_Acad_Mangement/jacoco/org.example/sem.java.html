@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>sem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Tests in 'Acad_Mangement.test' Coverage Results</a> &gt; <a href="index.source.html" class="el_package">org.example</a> &gt; <span class="el_source">sem.java</span></div><h1>sem.java</h1><pre class="source lang-java linenums">package org.example;
+
+import java.sql.*;
+import java.util.Scanner;
+
+<span class="nc" id="L6">public class sem {</span>
+
+<span class="fc" id="L8">    static final Connection connection = SQL.getConnection();</span>
+<span class="fc" id="L9">    static Scanner input = new Scanner(System.in);</span>
+    public static boolean start(String academicYear, String semester) throws SQLException {
+<span class="fc" id="L11">            Statement stmt = connection.createStatement();</span>
+<span class="fc" id="L12">            ResultSet rs = stmt.executeQuery(&quot;SELECT COUNT(*) FROM semester;&quot;);</span>
+<span class="fc" id="L13">            rs.next();</span>
+<span class="fc" id="L14">            int rowCount = rs.getInt(1);</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">            if (rowCount &gt; 0) {</span>
+<span class="fc" id="L16">                System.out.println(&quot;A semester is already running.&quot;);</span>
+//                System.out.println(&quot;Press any key to continue.&quot;);
+//                input.nextLine();
+            }
+
+
+//        String catalogue_query = &quot;CREATE TABLE course_catalog(\n&quot; +
+//                &quot;course_id VARCHAR(10),\n&quot; +
+//                &quot;PRIMARY KEY(course_id),\n&quot; +
+//                &quot;FOREIGN KEY (course_id) references course (id)\n&quot; +
+//                &quot;);&quot;;
+//        String offer_query = &quot;CREATE TABLE course_offering(\n&quot; +
+//                &quot;course_id VARCHAR(10),\n&quot; +
+//                &quot;cgpa_limit INTEGER,\n&quot; +
+//                &quot;instructor_id VARCHAR(10),\n&quot; +
+//                &quot;PRIMARY KEY(course_id),\n&quot; +
+//                &quot;FOREIGN KEY (course_id) references course_catalog (course_id),\n&quot; +
+//                &quot;FOREIGN KEY (instructor_id) references faculty (id)\n&quot; +
+//                &quot;);&quot;;
+//        String sem_query = &quot;CREATE TABLE semester(\n&quot; +
+//                &quot;academic_year VARCHAR(10),\n&quot; +
+//                &quot;semester VARCHAR(10)\n&quot; +
+//                &quot;);&quot;;
+//        String reg_query = &quot;CREATE TABLE registration_status(\n&quot; +
+//                &quot;course_id VARCHAR(10),\n&quot; +
+//                &quot;student_id VARCHAR(10),\n&quot; +
+//                &quot;instructor_id VARCHAR(10),\n&quot; +
+//                &quot;status VARCHAR(100),\n&quot; +
+//                &quot;FOREIGN KEY (course_id) references course_offering (course_id),\n&quot; +
+//                &quot;FOREIGN KEY (student_id) references student (id),\n&quot; +
+//                &quot;FOREIGN KEY (instructor_id) references faculty (id)\n&quot; +
+//                &quot;);&quot;;
+//        String up_query = &quot;UPDATE student SET credits = 0&quot;;
+
+            //Statement stmt = connection.createStatement();
+//                stmt.execute(catalogue_query);
+//                stmt.execute(offer_query);
+//                stmt.execute(sem_query);
+//                stmt.execute(reg_query);
+
+<span class="fc" id="L56">                String query = &quot;INSERT INTO semester(academic_year,semester) VALUES (?, ?);&quot;;</span>
+<span class="fc" id="L57">                PreparedStatement pstmt = connection.prepareStatement(query);</span>
+<span class="fc" id="L58">                pstmt.setString(1, academicYear);</span>
+<span class="fc" id="L59">                pstmt.setString(2, semester);</span>
+<span class="fc" id="L60">                pstmt.executeUpdate();</span>
+                //return true;
+
+
+<span class="fc" id="L64">        System.out.println(academicYear + &quot;-&quot; + semester + &quot; started successfully.&quot;);</span>
+<span class="fc" id="L65">        System.out.println(&quot;Please add courses to the current semester's course catalog.&quot;);</span>
+//        System.out.println(&quot;Press any key to continue.&quot;);
+//        input.nextLine();
+<span class="fc" id="L68">        return true;</span>
+    }
+
+<span class="fc" id="L71">    public static String AY = &quot;&quot;;</span>
+<span class="fc" id="L72">    public static String SEM = &quot;&quot;;</span>
+    public static String view()
+    {
+        try {
+<span class="fc" id="L76">            PreparedStatement ps = connection.prepareStatement(&quot;SELECT * FROM semester&quot;);</span>
+<span class="fc" id="L77">            ResultSet rs = ps.executeQuery();</span>
+<span class="fc bfc" id="L78" title="All 2 branches covered.">            while(rs.next()) {</span>
+<span class="fc" id="L79">                AY = rs.getString(1);</span>
+<span class="fc" id="L80">                SEM = rs.getString(2);</span>
+            }
+<span class="fc" id="L82">            ps.close();</span>
+<span class="fc" id="L83">            rs.close();</span>
+<span class="fc" id="L84">            return &quot;Year: &quot;+ AY +&quot; Semester: &quot; + SEM;</span>
+<span class="nc" id="L85">        } catch (SQLException e) {</span>
+<span class="nc" id="L86">            return &quot;No semester is running.&quot;;</span>
+        }
+    }
+
+    public static boolean end() {
+<span class="pc bpc" id="L91" title="1 of 2 branches missed.">        if(sem.view().equals(&quot;No semester is running.&quot;)) return false;</span>
+        else{
+            try {
+<span class="fc" id="L94">                PreparedStatement ps1 = connection.prepareStatement(&quot;TRUNCATE TABLE course_catalog CASCADE&quot;);</span>
+<span class="fc" id="L95">                PreparedStatement ps2 = connection.prepareStatement(&quot;TRUNCATE TABLE course_offering CASCADE&quot;);</span>
+<span class="fc" id="L96">                PreparedStatement ps3 = connection.prepareStatement(&quot;TRUNCATE TABLE registration_status CASCADE&quot;);</span>
+<span class="fc" id="L97">                PreparedStatement ps4 = connection.prepareStatement(&quot;TRUNCATE TABLE semester CASCADE&quot;);</span>
+<span class="fc" id="L98">                ps1.executeUpdate();</span>
+<span class="fc" id="L99">                ps2.executeUpdate();</span>
+<span class="fc" id="L100">                ps3.executeUpdate();</span>
+<span class="fc" id="L101">                ps4.executeUpdate();</span>
+<span class="fc" id="L102">                ps1.close();</span>
+<span class="fc" id="L103">                ps2.close();</span>
+<span class="fc" id="L104">                ps3.close();</span>
+<span class="fc" id="L105">                ps4.close();</span>
+<span class="nc" id="L106">            } catch (SQLException e) {</span>
+<span class="nc" id="L107">                throw new RuntimeException(e);</span>
+<span class="fc" id="L108">            }</span>
+<span class="fc" id="L109">            System.out.println(AY + &quot;-&quot; + SEM + &quot; ended successfully.&quot;);</span>
+//            System.out.println(&quot;Press any key to continue.&quot;);
+//            input.nextLine();
+<span class="fc" id="L112">            return true;</span>
+        }
+
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

@@ -1,0 +1,280 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > users</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: users (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Branch, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">users</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    90%
+  </span>
+  <span class="absValue">
+    (36/40)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    91.8%
+  </span>
+  <span class="absValue">
+    (78/85)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;
+&nbsp;import java.sql.*;
+&nbsp;import java.util.List;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class users {</b>
+<b class="fc">&nbsp;    static final Connection connection = SQL.getConnection();</b>
+&nbsp;
+&nbsp;    public static String add(String role, List&lt;String&gt; info) throws SQLException {
+&nbsp;        while (true) {
+<b class="pc">&nbsp;            switch (role) {</b>
+&nbsp;                case &quot;0&quot;: {
+<b class="fc">&nbsp;                    return &quot;wrong_input&quot;;</b>
+&nbsp;                }
+&nbsp;                case &quot;1&quot;: {
+&nbsp;                    String name, batchId, phoneNumber;
+<b class="fc">&nbsp;                    name = info.get(0);</b>
+<b class="fc">&nbsp;                    batchId = info.get(1);</b>
+<b class="fc">&nbsp;                    phoneNumber = info.get(2);</b>
+&nbsp;
+<b class="fc">&nbsp;                        PreparedStatement preparedStatement = connection.prepareStatement(</b>
+&nbsp;                                &quot;SELECT COUNT(*) FROM student WHERE batch_id = ?;&quot;
+&nbsp;                        );
+<b class="fc">&nbsp;                        preparedStatement.setString(1, batchId);</b>
+&nbsp;
+<b class="fc">&nbsp;                        ResultSet resultSet = preparedStatement.executeQuery();</b>
+&nbsp;
+<b class="fc">&nbsp;                        int count =0;</b>
+<b class="fc">&nbsp;                        while (resultSet.next())</b>
+<b class="fc">&nbsp;                            count=resultSet.getInt(1);</b>
+<b class="fc">&nbsp;                        String id = batchId + count;</b>
+&nbsp;
+<b class="fc">&nbsp;                        preparedStatement = connection.prepareStatement(</b>
+&nbsp;                                &quot;INSERT INTO student (id, name, batch_id, email, password, phone_number, credits, token) &quot; +
+&nbsp;                                        &quot;VALUES (?, ?, ?, ?, ?, ?, 0, &#39;&#39;);&quot;
+&nbsp;                        );
+<b class="fc">&nbsp;                        preparedStatement.setString(1, id);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(2, name);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(3, batchId);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(4, id + &quot;@iitrpr.ac.in&quot;);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(5, &quot;iitropar&quot;);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(6, phoneNumber);</b>
+&nbsp;
+<b class="fc">&nbsp;                        preparedStatement.executeUpdate();</b>
+<b class="fc">&nbsp;                        return id;</b>
+&nbsp;
+&nbsp;                    //break;
+&nbsp;                }
+&nbsp;                case &quot;2&quot;: {
+&nbsp;                    String name, depId, phoneNumber;
+&nbsp;                    //System.out.println(&quot;Enter name of the instructor&quot;);
+<b class="fc">&nbsp;                    name = info.get(0);</b>
+&nbsp;                    //System.out.println(&quot;Enter department ID of the instructor&quot;);
+<b class="fc">&nbsp;                    depId = info.get(1);</b>
+&nbsp;                    //System.out.println(&quot;Enter phone number of the instructor&quot;);
+<b class="fc">&nbsp;                    phoneNumber = info.get(2);</b>
+<b class="fc">&nbsp;                        PreparedStatement preparedStatement = connection.prepareStatement(</b>
+&nbsp;                                &quot;SELECT COUNT(*) FROM faculty WHERE dep_id = ?;&quot;
+&nbsp;                        );
+<b class="fc">&nbsp;                        preparedStatement.setString(1, depId);</b>
+&nbsp;
+<b class="fc">&nbsp;                        ResultSet resultSet = preparedStatement.executeQuery();</b>
+<b class="fc">&nbsp;                        int count=0;</b>
+<b class="fc">&nbsp;                        while(resultSet.next())</b>
+<b class="fc">&nbsp;                            count = resultSet.getInt(1);</b>
+<b class="fc">&nbsp;                        String id = depId + count;</b>
+&nbsp;
+<b class="fc">&nbsp;                        preparedStatement = connection.prepareStatement(</b>
+&nbsp;                                &quot;INSERT INTO faculty (id, name, dep_id, email, password, phone_number, token) &quot; +
+&nbsp;                                        &quot;VALUES (?, ?, ?, ?, ?, ?, &#39;&#39;);&quot;
+&nbsp;                        );
+<b class="fc">&nbsp;                        preparedStatement.setString(1, id);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(2, name);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(3, depId);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(4, id + &quot;@iitrpr.ac.in&quot;);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(5, &quot;iitropar&quot;);</b>
+<b class="fc">&nbsp;                        preparedStatement.setString(6, phoneNumber);</b>
+&nbsp;
+<b class="fc">&nbsp;                        preparedStatement.executeUpdate();</b>
+<b class="fc">&nbsp;                        return id;</b>
+&nbsp;                    //break;
+&nbsp;                }
+&nbsp;                default: {
+<b class="nc">&nbsp;                    System.out.println(&quot;Please follow the instructions&quot;);</b>
+&nbsp;                }
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public static boolean delete(String role, String id) {
+&nbsp;        while(true){
+<b class="pc">&nbsp;            switch(role){</b>
+<b class="fc">&nbsp;                case(&quot;0&quot;): return true;</b>
+&nbsp;                case(&quot;1&quot;):
+&nbsp;                {
+<b class="fc">&nbsp;                    String deleteStudentQuery = &quot;DELETE FROM student WHERE id = ?;&quot;;</b>
+<b class="fc">&nbsp;                    try(PreparedStatement removeuser= connection.prepareStatement(deleteStudentQuery)){</b>
+<b class="fc">&nbsp;                        removeuser.setString(1, id);</b>
+<b class="fc">&nbsp;                        removeuser.executeUpdate();</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;Student successfully deleted!&quot;);</b>
+<b class="fc">&nbsp;                        return true;</b>
+<b class="fc">&nbsp;                    }catch(SQLException e){</b>
+<b class="nc">&nbsp;                        System.out.println(&quot;Error deleting student&quot;);</b>
+<b class="nc">&nbsp;                        return false;</b>
+&nbsp;                    }
+&nbsp;                }
+&nbsp;                case(&quot;2&quot;):
+&nbsp;                {
+<b class="fc">&nbsp;                    String deleteFacultyQuery = &quot;DELETE FROM faculty WHERE id = ?;&quot;;</b>
+<b class="fc">&nbsp;                    try(PreparedStatement removeuser= connection.prepareStatement(deleteFacultyQuery)){</b>
+<b class="fc">&nbsp;                        removeuser.setString(1, id);</b>
+<b class="fc">&nbsp;                        removeuser.executeUpdate();</b>
+<b class="fc">&nbsp;                        System.out.println(&quot;Instructor successfully deleted!&quot;);</b>
+<b class="fc">&nbsp;                        return true;</b>
+<b class="fc">&nbsp;                    }catch(SQLException e){</b>
+<b class="nc">&nbsp;                        System.out.println(&quot;Error deleting faculty member&quot;);</b>
+<b class="nc">&nbsp;                        return false;</b>
+&nbsp;                    }
+&nbsp;                }
+&nbsp;                default: {
+<b class="nc">&nbsp;                    System.out.println(&quot;Please follow the instructions&quot;);</b>
+&nbsp;                }
+&nbsp;
+&nbsp;            }
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    public static boolean view(Integer choice) throws SQLException {
+&nbsp;        //Scanner input = new Scanner(System.in);
+&nbsp;//        System.out.println(&quot;Enter 1 for student and 2 for instructor:&quot;);
+&nbsp;//        choice = input.nextInt();
+&nbsp;        String query;
+<b class="fc">&nbsp;        if (choice == 1) {</b>
+<b class="fc">&nbsp;            query = &quot;SELECT id, name, batch_id, email, phone_number FROM student&quot;;</b>
+<b class="fc">&nbsp;        } else if (choice == 2) {</b>
+<b class="fc">&nbsp;            query = &quot;SELECT id, name, email, dep_id, phone_number FROM faculty&quot;;</b>
+&nbsp;        } else {
+<b class="fc">&nbsp;            System.out.println(&quot;Invalid choice.&quot;);</b>
+<b class="fc">&nbsp;            return false;</b>
+&nbsp;        }
+<b class="fc">&nbsp;            Statement statement = connection.createStatement();</b>
+<b class="fc">&nbsp;            ResultSet result = statement.executeQuery(query);</b>
+<b class="fc">&nbsp;            ResultSetMetaData metaData = result.getMetaData();</b>
+<b class="fc">&nbsp;            int numColumns = metaData.getColumnCount();</b>
+<b class="fc">&nbsp;            StringBuilder responseBuilder = new StringBuilder();</b>
+<b class="fc">&nbsp;            while (result.next()) {</b>
+<b class="fc">&nbsp;                for (int i = 1; i &lt;= numColumns; i++) {</b>
+<b class="fc">&nbsp;                    String columnValue = result.getString(i);</b>
+<b class="fc">&nbsp;                    String columnName = metaData.getColumnName(i);</b>
+<b class="fc">&nbsp;                    responseBuilder.append(columnName).append(&quot; ---&gt; &quot;).append(columnValue).append(&quot;   &quot;);</b>
+&nbsp;                }
+<b class="fc">&nbsp;                responseBuilder.append(&quot;\n&quot;);</b>
+&nbsp;            }
+<b class="fc">&nbsp;            System.out.println(responseBuilder.toString());</b>
+<b class="fc">&nbsp;            statement.close();</b>
+<b class="fc">&nbsp;            result.close();</b>
+&nbsp;//            System.out.println(&quot;Press any key to continue.&quot;);
+&nbsp;//            input.nextLine();
+&nbsp;//            input.nextLine();
+<b class="fc">&nbsp;            return true;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-03-07 22:59</div>
+</div>
+</body>
+</html>
